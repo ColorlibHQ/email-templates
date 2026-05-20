@@ -1,0 +1,118 @@
+<mjml>
+  <mj-head>
+    <mj-title>Photography — Amazing Photography</mj-title>
+    <mj-preview>Amazing photography gallery. Take a look at our latest work.</mj-preview>
+
+    <mj-font name="Poppins" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Poppins, Arial, sans-serif" />
+      <mj-text color="#666666" font-size="15px" />
+      <mj-button background-color="#ea168e" color="#ffffff" border-radius="5px" inner-padding="8px 18px" font-weight="500" font-size="13px" />
+      <mj-class name="h1" font-family="Poppins, Arial, sans-serif" color="#000000" font-size="20px" font-weight="700" letter-spacing="1px" text-transform="uppercase" padding="0" />
+      <mj-class name="h2" font-family="Poppins, Arial, sans-serif" color="#000000" font-size="28px" line-height="1.3" font-weight="500" padding="0 0 12px 0" />
+      <mj-class name="h2-white" font-family="Poppins, Arial, sans-serif" color="#ffffff" font-size="30px" line-height="1.3" font-weight="500" padding="0 0 10px 0" />
+      <mj-class name="album-title" font-family="Poppins, Arial, sans-serif" color="#000000" font-size="16px" font-weight="600" padding="10px 0 2px 0" />
+      <mj-class name="album-cat" font-family="Poppins, Arial, sans-serif" color="#999999" font-size="13px" padding="0 0 14px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #ea168e; }
+      .hero-accent { color: #ea168e; font-weight: 600; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f1f1f1" width="600px">
+
+    <!-- Logo -->
+    <mj-section background-color="#ffffff" padding="20px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h1">
+          <a href="#" style="color:#000000;text-decoration:none;">Photography</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-hero mode="fixed-height" height="400px" background-url="images/bg_1.jpg" background-color="#222222" background-position="center center" padding="40px 24px">
+      <mj-text align="center" mj-class="h2-white">Amazing <span class="hero-accent">Photography</span></mj-text>
+      <mj-text align="center" color="#f2f2f2" padding="0 0 14px 0">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      <mj-button href="#" align="center">Start Shopping</mj-button>
+    </mj-hero>
+
+    <!-- Gallery heading -->
+    <mj-section background-color="#ffffff" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Gallery</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Gallery row 1 -->
+    <mj-section background-color="#ffffff" padding="20px 30px 0 30px">
+      <mj-column width="50%" padding="0 4px">
+        <mj-image src="images/work-1.jpg" alt="Album Name" href="#" padding="0" />
+        <mj-text align="center" mj-class="album-title"><a href="#" style="color:#000000;text-decoration:none;">Album Name</a></mj-text>
+        <mj-text align="center" mj-class="album-cat">Fashion</mj-text>
+      </mj-column>
+      <mj-column width="50%" padding="0 4px">
+        <mj-image src="images/work-5.jpg" alt="Album Name" href="#" padding="0" />
+        <mj-text align="center" mj-class="album-title"><a href="#" style="color:#000000;text-decoration:none;">Album Name</a></mj-text>
+        <mj-text align="center" mj-class="album-cat">Photography</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Gallery row 2 -->
+    <mj-section background-color="#ffffff" padding="0 30px">
+      <mj-column width="50%" padding="0 4px">
+        <mj-image src="images/work-2.jpg" alt="Album Name" href="#" padding="0" />
+        <mj-text align="center" mj-class="album-title"><a href="#" style="color:#000000;text-decoration:none;">Album Name</a></mj-text>
+        <mj-text align="center" mj-class="album-cat">Nature</mj-text>
+      </mj-column>
+      <mj-column width="50%" padding="0 4px">
+        <mj-image src="images/work-6.jpg" alt="Album Name" href="#" padding="0" />
+        <mj-text align="center" mj-class="album-title"><a href="#" style="color:#000000;text-decoration:none;">Album Name</a></mj-text>
+        <mj-text align="center" mj-class="album-cat">Fashion</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Gallery row 3 -->
+    <mj-section background-color="#ffffff" padding="0 30px">
+      <mj-column width="50%" padding="0 4px">
+        <mj-image src="images/work-3.jpg" alt="Album Name" href="#" padding="0" />
+        <mj-text align="center" mj-class="album-title"><a href="#" style="color:#000000;text-decoration:none;">Album Name</a></mj-text>
+        <mj-text align="center" mj-class="album-cat">Animals</mj-text>
+      </mj-column>
+      <mj-column width="50%" padding="0 4px">
+        <mj-image src="images/work-7.jpg" alt="Album Name" href="#" padding="0" />
+        <mj-text align="center" mj-class="album-title"><a href="#" style="color:#000000;text-decoration:none;">Album Name</a></mj-text>
+        <mj-text align="center" mj-class="album-cat">Fashion</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Gallery row 4 -->
+    <mj-section background-color="#ffffff" padding="0 30px 40px 30px">
+      <mj-column width="50%" padding="0 4px">
+        <mj-image src="images/work-4.jpg" alt="Album Name" href="#" padding="0" />
+        <mj-text align="center" mj-class="album-title"><a href="#" style="color:#000000;text-decoration:none;">Album Name</a></mj-text>
+        <mj-text align="center" mj-class="album-cat">Model</mj-text>
+      </mj-column>
+      <mj-column width="50%" padding="0 4px">
+        <mj-image src="images/work-8.jpg" alt="Album Name" href="#" padding="0" />
+        <mj-text align="center" mj-class="album-title"><a href="#" style="color:#000000;text-decoration:none;">Album Name</a></mj-text>
+        <mj-text align="center" mj-class="album-cat">Nature</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#fafafa" padding="30px 30px">
+      <mj-column>
+        <mj-text align="center" color="#666666" font-size="14px" padding="0 0 6px 0">No longer want to receive these emails? You can <a href="#" style="color:#ea168e;">Unsubscribe here</a></mj-text>
+        <mj-text align="center" color="#999999" font-size="13px">&copy; 2026 Stories. All Rights Reserved</mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

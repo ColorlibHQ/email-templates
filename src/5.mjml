@@ -1,0 +1,218 @@
+<mjml>
+  <mj-head>
+    <mj-title>Travel — Be a Traveler, not a Tourist</mj-title>
+    <mj-preview>Best destinations, deals, and tips. Plan your next trip with Travel.</mj-preview>
+
+    <mj-font name="Nunito Sans" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Nunito Sans, Arial, sans-serif" />
+      <mj-text color="#666666" font-size="15px" />
+      <mj-button background-color="#f5564e" color="#ffffff" border-radius="30px" inner-padding="9px 22px" font-size="13px" font-weight="600" />
+      <mj-class name="h2" color="#000000" font-size="28px" line-height="1.3" font-weight="800" padding="0 0 14px 0" />
+      <mj-class name="h2-white" color="#ffffff" font-size="38px" line-height="1.2" font-weight="800" padding="0 0 14px 0" />
+      <mj-class name="h3" color="#000000" font-size="17px" line-height="1.3" font-weight="700" padding="0 0 4px 0" />
+      <mj-class name="meta" font-size="12px" text-transform="uppercase" letter-spacing="1px" color="#999999" padding="0 0 6px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #f5564e; }
+      .nav a { color:#666; font-size:13px; text-decoration:none; padding:0 6px; }
+      .counter-num { display:block; color:#fff; font-size:34px; font-weight:800; line-height:1.1; }
+      .counter-name { display:block; color:rgba(255,255,255,.9); font-size:13px; letter-spacing:1px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f1f1f1" width="600px">
+
+    <!-- Header -->
+    <mj-section background-color="#ffffff" padding="20px 24px">
+      <mj-column width="40%" vertical-align="middle">
+        <mj-text font-weight="800" font-size="22px" text-transform="uppercase" padding="0">
+          <a href="#" style="color:#000;text-decoration:none;">Travel</a>
+        </mj-text>
+      </mj-column>
+      <mj-column width="60%" vertical-align="middle">
+        <mj-text align="right" font-size="13px" padding="0" css-class="nav">
+          <a href="#">Home</a><a href="#">About</a><a href="#">Works</a><a href="#">Blog</a><a href="#">Contact</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-hero mode="fixed-height" height="400px" background-url="images/bg_1.jpg" background-color="#222" background-position="center center" padding="40px 30px">
+      <mj-text align="center" mj-class="h2-white">Be a Traveler not a Tourist</mj-text>
+    </mj-hero>
+
+    <!-- Welcome (dark) -->
+    <mj-section background-color="#333333" padding="40px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2-white" font-size="26px">Welcome To Travel Agency</mj-text>
+        <mj-text align="center" color="#d9d9d9">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Destinations intro -->
+    <mj-section background-color="#ffffff" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Best Destination</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Destinations grid: 4 rows of 2 -->
+    <mj-section background-color="#ffffff" padding="20px 20px">
+      <mj-column>
+        <mj-image src="images/destination-1.jpg" alt="Destination" href="#" padding="0 10px 8px 0" />
+        <mj-text align="center" mj-class="h3" padding-right="10px"><a href="#" style="color:#000;text-decoration:none;">Gurtnellen, Switzerland</a></mj-text>
+        <mj-text align="center" color="#f5564e" font-size="13px" padding="0 10px 20px 0">10 days tour</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/destination-5.jpg" alt="Destination" href="#" padding="0 0 8px 10px" />
+        <mj-text align="center" mj-class="h3" padding-left="10px"><a href="#" style="color:#000;text-decoration:none;">Gurtnellen, Switzerland</a></mj-text>
+        <mj-text align="center" color="#f5564e" font-size="13px" padding="0 0 20px 10px">10 days tour</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px">
+      <mj-column>
+        <mj-image src="images/destination-2.jpg" alt="Destination" href="#" padding="0 10px 8px 0" />
+        <mj-text align="center" mj-class="h3" padding-right="10px"><a href="#" style="color:#000;text-decoration:none;">Gurtnellen, Switzerland</a></mj-text>
+        <mj-text align="center" color="#f5564e" font-size="13px" padding="0 10px 20px 0">10 days tour</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/destination-6.jpg" alt="Destination" href="#" padding="0 0 8px 10px" />
+        <mj-text align="center" mj-class="h3" padding-left="10px"><a href="#" style="color:#000;text-decoration:none;">Gurtnellen, Switzerland</a></mj-text>
+        <mj-text align="center" color="#f5564e" font-size="13px" padding="0 0 20px 10px">10 days tour</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px">
+      <mj-column>
+        <mj-image src="images/destination-3.jpg" alt="Destination" href="#" padding="0 10px 8px 0" />
+        <mj-text align="center" mj-class="h3" padding-right="10px"><a href="#" style="color:#000;text-decoration:none;">Gurtnellen, Switzerland</a></mj-text>
+        <mj-text align="center" color="#f5564e" font-size="13px" padding="0 10px 20px 0">10 days tour</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/destination-7.jpg" alt="Destination" href="#" padding="0 0 8px 10px" />
+        <mj-text align="center" mj-class="h3" padding-left="10px"><a href="#" style="color:#000;text-decoration:none;">Gurtnellen, Switzerland</a></mj-text>
+        <mj-text align="center" color="#f5564e" font-size="13px" padding="0 0 20px 10px">10 days tour</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px 40px 20px">
+      <mj-column>
+        <mj-image src="images/destination-4.jpg" alt="Destination" href="#" padding="0 10px 8px 0" />
+        <mj-text align="center" mj-class="h3" padding-right="10px"><a href="#" style="color:#000;text-decoration:none;">Gurtnellen, Switzerland</a></mj-text>
+        <mj-text align="center" color="#f5564e" font-size="13px" padding="0 10px 0 0">10 days tour</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/destination-8.jpg" alt="Destination" href="#" padding="0 0 8px 10px" />
+        <mj-text align="center" mj-class="h3" padding-left="10px"><a href="#" style="color:#000;text-decoration:none;">Gurtnellen, Switzerland</a></mj-text>
+        <mj-text align="center" color="#f5564e" font-size="13px" padding="0 0 0 10px">10 days tour</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Counter -->
+    <mj-section background-url="images/bg_1.jpg" background-size="cover" background-position="center center" background-color="#222" padding="60px 20px">
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">200</span><span class="counter-name">Amazing Deals</span></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">1200</span><span class="counter-name">Sold Tours</span></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">1000</span><span class="counter-name">Happy Travelers</span></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Blog -->
+    <mj-section background-color="#ffffff" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Our Blog</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 20px 30px 20px">
+      <mj-column>
+        <mj-image src="images/blog-1.jpg" alt="Business Key to Success" padding="0 10px 14px 0" />
+        <mj-text mj-class="meta" padding-left="0">Feb 18, 2026 &middot; Travel</mj-text>
+        <mj-text mj-class="h3" padding-left="0">Business Key to Success</mj-text>
+        <mj-text padding-left="0" padding-bottom="10px">Far far away, behind the word mountains.</mj-text>
+        <mj-button href="#" align="left">Read more</mj-button>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/blog-2.jpg" alt="Web Design Technique" padding="0 0 14px 10px" />
+        <mj-text mj-class="meta" padding-left="0">Feb 18, 2026 &middot; Travel</mj-text>
+        <mj-text mj-class="h3" padding-left="0">Web Design Technique</mj-text>
+        <mj-text padding-left="0" padding-bottom="10px">Far far away, behind the word mountains.</mj-text>
+        <mj-button href="#" align="left">Read more</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Testimonials -->
+    <mj-section background-color="#fafafa" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Happy Tourist</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafafa" padding="0 20px 40px 20px">
+      <mj-column>
+        <mj-image src="images/person_1.jpg" alt="Ronald Tuff" width="100px" border-radius="50%" align="center" padding="0 0 16px 0" />
+        <mj-text align="center" mj-class="h3" padding="0">Ronald Tuff</mj-text>
+        <mj-text align="center" font-size="13px" color="#999999" padding="0 0 8px 0">Businessman</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries.</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/person_2.jpg" alt="William Clarson" width="100px" border-radius="50%" align="center" padding="0 0 16px 0" />
+        <mj-text align="center" mj-class="h3" padding="0">William Clarson</mj-text>
+        <mj-text align="center" font-size="13px" color="#999999" padding="0 0 8px 0">Businessman</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Things to know -->
+    <mj-section background-color="#ffffff" padding="0">
+      <mj-column vertical-align="middle">
+        <mj-image src="images/bg_2.jpg" alt="Things to know before traveling" padding="0" />
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-text mj-class="h2" font-size="22px" padding="30px 30px 14px 30px">Things to know before traveling</mj-text>
+        <mj-text padding="0 30px 4px 30px"><strong style="color:#000;">1. Pack up your things</strong></mj-text>
+        <mj-text padding="0 30px 14px 30px" font-size="13px">A small river named Duden flows by their place and supplies.</mj-text>
+        <mj-text padding="0 30px 4px 30px"><strong style="color:#000;">2. Search for Destination</strong></mj-text>
+        <mj-text padding="0 30px 14px 30px" font-size="13px">A small river named Duden flows by their place and supplies.</mj-text>
+        <mj-text padding="0 30px 4px 30px"><strong style="color:#000;">3. Be Responsible</strong></mj-text>
+        <mj-text padding="0 30px 30px 30px" font-size="13px">A small river named Duden flows by their place and supplies.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-wrapper background-color="#000000" padding="40px 30px 20px 30px">
+      <mj-section>
+        <mj-column width="60%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="700" padding="0 10px 8px 0">About</mj-text>
+          <mj-text color="#999999" padding="0 10px 14px 0">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="700" padding="0 0 8px 10px">Contact Info</mj-text>
+          <mj-text color="#b3b3b3" padding="0 0 8px 10px">203 Fake St. Mountain View, San Francisco, California, USA</mj-text>
+          <mj-text color="#b3b3b3" padding="0 0 0 10px">+2 392 3929 210</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="20px 0 0 0">
+        <mj-column width="60%">
+          <mj-text color="#808080" font-size="13px">&copy; 2026 Travel. All rights reserved.</mj-text>
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text color="#808080" font-size="13px" align="right"><a href="#" style="color:#808080;text-decoration:underline;">Unsubscribe</a></mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

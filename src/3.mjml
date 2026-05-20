@@ -1,0 +1,135 @@
+<mjml>
+  <mj-head>
+    <mj-title>Agency — Portfolio &amp; Projects</mj-title>
+    <mj-preview>We are Portfolio Agency. We create functional and beautiful websites.</mj-preview>
+
+    <mj-font name="Work Sans" href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Work Sans, Arial, sans-serif" />
+      <mj-text color="#666666" font-size="15px" />
+      <mj-button background-color="#2f89fc" color="#ffffff" border-radius="4px" />
+      <mj-class name="h2" color="#000000" font-size="28px" line-height="1.3" font-weight="700" padding="0 0 14px 0" />
+      <mj-class name="h3" color="#000000" font-size="16px" line-height="1.3" font-weight="600" padding="0 0 4px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #2f89fc; }
+      .accent { color: #2f89fc; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f1f1f1" width="600px">
+
+    <!-- Logo -->
+    <mj-section background-color="#ffffff" padding="20px 0">
+      <mj-column>
+        <mj-text align="center" font-weight="700" font-size="22px" letter-spacing="1px" text-transform="uppercase" padding="0">
+          <a href="#" style="color:#000;text-decoration:none;">Agency</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-section background-color="#ffffff" padding="40px 40px 60px 40px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2" font-size="26px">We Are Portfolio Agency, We Create <span class="accent">Functional</span> &amp; <span class="accent">Beautiful</span> Websites</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Projects intro -->
+    <mj-section background-color="#ffffff" padding="0 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Projects</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Work grid: 4 rows of 2 columns -->
+    <mj-section background-color="#ffffff" padding="20px 20px">
+      <mj-column>
+        <mj-image src="images/work-1.jpg" alt="Work name" href="#" padding="0 10px 8px 0" />
+        <mj-text align="center" mj-class="h3" padding-right="10px"><a href="#" style="color:#000;text-decoration:none;">Work name</a></mj-text>
+        <mj-text align="center" color="#999999" font-size="13px" padding="0 10px 20px 0">Printing</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/work-5.jpg" alt="Work name" href="#" padding="0 0 8px 10px" />
+        <mj-text align="center" mj-class="h3" padding-left="10px"><a href="#" style="color:#000;text-decoration:none;">Work name</a></mj-text>
+        <mj-text align="center" color="#999999" font-size="13px" padding="0 0 20px 10px">Branding</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px">
+      <mj-column>
+        <mj-image src="images/work-2.jpg" alt="Work name" href="#" padding="0 10px 8px 0" />
+        <mj-text align="center" mj-class="h3" padding-right="10px"><a href="#" style="color:#000;text-decoration:none;">Work name</a></mj-text>
+        <mj-text align="center" color="#999999" font-size="13px" padding="0 10px 20px 0">Printing</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/work-6.jpg" alt="Work name" href="#" padding="0 0 8px 10px" />
+        <mj-text align="center" mj-class="h3" padding-left="10px"><a href="#" style="color:#000;text-decoration:none;">Work name</a></mj-text>
+        <mj-text align="center" color="#999999" font-size="13px" padding="0 0 20px 10px">Branding</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px">
+      <mj-column>
+        <mj-image src="images/work-3.jpg" alt="Work name" href="#" padding="0 10px 8px 0" />
+        <mj-text align="center" mj-class="h3" padding-right="10px"><a href="#" style="color:#000;text-decoration:none;">Work</a></mj-text>
+        <mj-text align="center" color="#999999" font-size="13px" padding="0 10px 20px 0">Printing</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/work-7.jpg" alt="Work name" href="#" padding="0 0 8px 10px" />
+        <mj-text align="center" mj-class="h3" padding-left="10px"><a href="#" style="color:#000;text-decoration:none;">Work name</a></mj-text>
+        <mj-text align="center" color="#999999" font-size="13px" padding="0 0 20px 10px">Branding</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px 40px 20px">
+      <mj-column>
+        <mj-image src="images/work-4.jpg" alt="Work name" href="#" padding="0 10px 8px 0" />
+        <mj-text align="center" mj-class="h3" padding-right="10px"><a href="#" style="color:#000;text-decoration:none;">Work</a></mj-text>
+        <mj-text align="center" color="#999999" font-size="13px" padding="0 10px 0 0">Printing</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/work-8.jpg" alt="Work name" href="#" padding="0 0 8px 10px" />
+        <mj-text align="center" mj-class="h3" padding-left="10px"><a href="#" style="color:#000;text-decoration:none;">Work name</a></mj-text>
+        <mj-text align="center" color="#999999" font-size="13px" padding="0 0 0 10px">Branding</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-wrapper background-color="#000000" padding="40px 30px 20px 30px">
+      <mj-section>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="600" padding="0 10px 8px 0">About</mj-text>
+          <mj-text color="#999999" padding="0 10px 0 0">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="600" padding="0 5px 8px 5px">Contact Info</mj-text>
+          <mj-text color="#b3b3b3" padding="0 5px 8px 5px">203 Fake St. Mountain View, San Francisco, California, USA</mj-text>
+          <mj-text color="#b3b3b3" padding="0 5px 0 5px">+2 392 3929 210</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="600" padding="0 0 8px 10px">Useful Links</mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Home</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">About</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Services</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 0 10px"><a href="#" style="color:#fff;text-decoration:none;">Work</a></mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="20px 0 0 0">
+        <mj-column width="60%">
+          <mj-text color="#808080" font-size="13px">&copy; 2026 Agency. All rights reserved.</mj-text>
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text color="#808080" font-size="13px" align="right"><a href="#" style="color:#808080;text-decoration:underline;">Unsubscribe</a></mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

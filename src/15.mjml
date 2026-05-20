@@ -1,0 +1,251 @@
+<mjml>
+  <mj-head>
+    <mj-title>Clutch — Modern Website Design</mj-title>
+    <mj-preview>We create modern websites. Portfolio, skills and stories in one email.</mj-preview>
+
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Open Sans, Arial, sans-serif" />
+      <mj-text color="#666666" font-size="15px" />
+      <mj-button background-color="#52c8ff" color="#ffffff" border-radius="30px" inner-padding="9px 22px" font-weight="500" font-size="13px" />
+      <mj-class name="h2" color="#000000" font-size="22px" line-height="1.4" font-weight="400" padding="0 0 14px 0" />
+      <mj-class name="h2-white" color="#ffffff" font-size="30px" line-height="1.3" font-weight="400" padding="0 0 14px 0" />
+      <mj-class name="h3" color="#000000" font-size="16px" line-height="1.3" font-weight="600" padding="0 0 6px 0" />
+      <mj-class name="meta" font-size="13px" text-transform="uppercase" letter-spacing="1px" color="#999999" padding="0 0 6px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #52c8ff; }
+      .nav a { color:#999999; font-size:13px; font-weight:500; text-decoration:none; padding:0 6px; }
+      .counter-num { display:block; color:#ffffff; font-size:34px; font-weight:400; line-height:1.2; }
+      .counter-name { display:block; color:#e6f5ff; font-size:13px; }
+      .skill h3 { margin:0 0 8px 0; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:1px; color:#000; }
+      .skill .bar { background:#eeeeee; height:6px; width:100%; }
+      .skill .bar > div { background:#52c8ff; height:6px; }
+      .skill { margin-bottom:18px; }
+      .feature { padding:0 0 16px 0; }
+      .feature img { vertical-align:top; }
+      .feature .text { padding-left:12px; }
+      .feature h3 { margin:0; font-size:15px; font-weight:600; color:#000; }
+      .feature p { margin:4px 0 0 0; font-size:13px; color:#666; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f1f1f1" width="600px">
+
+    <!-- Header: logo + nav -->
+    <mj-section background-color="#ffffff" padding="20px 30px">
+      <mj-column width="35%" vertical-align="middle">
+        <mj-text font-weight="600" font-size="20px" padding="0">
+          <a href="#" style="color:#000;text-decoration:none;">Clutch</a>
+        </mj-text>
+      </mj-column>
+      <mj-column width="65%" vertical-align="middle">
+        <mj-text align="right" padding="0" font-size="13px" css-class="nav">
+          <a href="#">Home</a><a href="#">About</a><a href="#">Works</a><a href="#">Blog</a><a href="#">Contact</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-hero mode="fixed-height" height="400px" background-url="images/bg_1.jpg" background-color="#033fff" background-position="center center" padding="40px 30px">
+      <mj-text align="center" mj-class="h2-white">We Create Modern Website</mj-text>
+      <mj-text align="center" color="#e6f5ff">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</mj-text>
+      <mj-button href="#" align="center" background-color="#ffffff" color="#000000">Discover now</mj-button>
+    </mj-hero>
+
+    <!-- About (image + text on light bg) -->
+    <mj-section background-color="#fafafa" padding="0">
+      <mj-column vertical-align="middle" width="50%">
+        <mj-image src="images/about.jpg" alt="About us" padding="0" />
+      </mj-column>
+      <mj-column vertical-align="middle" width="50%">
+        <mj-text mj-class="h2" padding="30px 30px 8px 30px">We are creative and good we will go beyond the border</mj-text>
+        <mj-text padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 30px 30px">Read more</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Features (text left + image right) -->
+    <mj-section background-color="#ffffff" padding="0">
+      <mj-column vertical-align="middle" width="50%">
+        <mj-text mj-class="h2" padding="30px 30px 14px 30px">Our Features</mj-text>
+        <mj-table padding="0 30px 30px 30px" cellpadding="0" cellspacing="0">
+          <tr class="feature">
+            <td width="56" style="padding-bottom:16px;vertical-align:top;"><img src="images/verified.png" alt="" width="40" style="display:block;border:0;" /></td>
+            <td style="padding:0 0 16px 12px;vertical-align:top;">
+              <strong style="color:#000;font-size:15px;font-weight:600;">Responsive</strong><br/>
+              <span style="color:#666;font-size:13px;">A small river named Duden flows by their</span>
+            </td>
+          </tr>
+          <tr class="feature">
+            <td width="56" style="padding-bottom:16px;vertical-align:top;"><img src="images/verified.png" alt="" width="40" style="display:block;border:0;" /></td>
+            <td style="padding:0 0 16px 12px;vertical-align:top;">
+              <strong style="color:#000;font-size:15px;font-weight:600;">Modern Design</strong><br/>
+              <span style="color:#666;font-size:13px;">A small river named Duden flows by their</span>
+            </td>
+          </tr>
+          <tr class="feature">
+            <td width="56" style="vertical-align:top;"><img src="images/verified.png" alt="" width="40" style="display:block;border:0;" /></td>
+            <td style="padding-left:12px;vertical-align:top;">
+              <strong style="color:#000;font-size:15px;font-weight:600;">Minimal Design</strong><br/>
+              <span style="color:#666;font-size:13px;">A small river named Duden flows by their</span>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+      <mj-column vertical-align="middle" width="50%">
+        <mj-image src="images/bg_2.jpg" alt="Features" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Skills (image + progress bars on light bg) -->
+    <mj-section background-color="#fafafa" padding="0">
+      <mj-column vertical-align="middle" width="50%">
+        <mj-image src="images/skill.jpg" alt="Skills" padding="0" />
+      </mj-column>
+      <mj-column vertical-align="middle" width="50%">
+        <mj-text mj-class="h2" padding="30px 30px 14px 30px">Our Skills Set</mj-text>
+        <mj-text padding="0 30px 30px 30px">
+          <div class="skill">
+            <h3>Email Template - 80%</h3>
+            <div class="bar"><div style="width:80%;"></div></div>
+          </div>
+          <div class="skill">
+            <h3>Wordpress - 75%</h3>
+            <div class="bar"><div style="width:75%;"></div></div>
+          </div>
+          <div class="skill">
+            <h3>Bootstrap - 90%</h3>
+            <div class="bar"><div style="width:90%;"></div></div>
+          </div>
+          <div class="skill">
+            <h3>Landing Page - 95%</h3>
+            <div class="bar"><div style="width:95%;"></div></div>
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Work intro -->
+    <mj-section background-color="#ffffff" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Work</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="10px 20px">
+      <mj-column>
+        <mj-image src="images/work-1.jpg" alt="Work 1" href="#" padding="0" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="20px 20px 40px 20px">
+      <mj-column>
+        <mj-image src="images/work-3.jpg" alt="Work 3" href="#" padding="0 5px 0 0" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/work-4.jpg" alt="Work 4" href="#" padding="0 0 0 5px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Blog -->
+    <mj-section background-color="#ffffff" padding="20px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Our Blog</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 20px 40px 20px">
+      <mj-column>
+        <mj-image src="images/blog-1.jpg" alt="Business Key to Success" padding="0 10px 14px 0" />
+        <mj-text mj-class="meta" padding="0 10px 4px 0">Feb 18, 2026 &middot; Food</mj-text>
+        <mj-text mj-class="h3" padding="0 10px 8px 0">Business Key to Success</mj-text>
+        <mj-text padding="0 10px 14px 0">Far far away, behind the word mountains, far from the countries.</mj-text>
+        <mj-button href="#" align="left" padding-right="10px">Read more</mj-button>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/blog-2.jpg" alt="Web Design Technique" padding="0 0 14px 10px" />
+        <mj-text mj-class="meta" padding="0 0 4px 10px">Feb 18, 2026 &middot; Food</mj-text>
+        <mj-text mj-class="h3" padding="0 0 8px 10px">Web Design Technique</mj-text>
+        <mj-text padding="0 0 14px 10px">Far far away, behind the word mountains, far from the countries.</mj-text>
+        <mj-button href="#" align="left" padding-left="10px">Read more</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Staff -->
+    <mj-section background-color="#fafafa" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Staff</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafafa" padding="10px 20px 40px 20px">
+      <mj-column>
+        <mj-image src="images/person_1.jpg" alt="Ronald Tuff" width="80px" border-radius="50%" align="center" padding="0 0 14px 0" />
+        <mj-text align="center" font-size="13px" color="#999999" padding="0">Businessman</mj-text>
+        <mj-text align="center" mj-class="h3" padding="0 0 8px 0">Ronald Tuff</mj-text>
+        <mj-text align="center" font-size="13px">Far far away, behind the word mountains.</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/person_2.jpg" alt="William Clarson" width="80px" border-radius="50%" align="center" padding="0 0 14px 0" />
+        <mj-text align="center" font-size="13px" color="#999999" padding="0">Businessman</mj-text>
+        <mj-text align="center" mj-class="h3" padding="0 0 8px 0">William Clarson</mj-text>
+        <mj-text align="center" font-size="13px">Far far away, behind the word mountains.</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/person_3.jpg" alt="Sophia Lane" width="80px" border-radius="50%" align="center" padding="0 0 14px 0" />
+        <mj-text align="center" font-size="13px" color="#999999" padding="0">Businessman</mj-text>
+        <mj-text align="center" mj-class="h3" padding="0 0 8px 0">Sophia Lane</mj-text>
+        <mj-text align="center" font-size="13px">Far far away, behind the word mountains.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Counter -->
+    <mj-section background-url="images/bg_1.jpg" background-size="cover" background-position="center center" background-color="#033fff" padding="60px 20px">
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">20</span><span class="counter-name">Clients</span></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">1200</span><span class="counter-name">Projects</span></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">100</span><span class="counter-name">Coffee Cups</span></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-wrapper background-color="#000000" padding="40px 30px 20px 30px">
+      <mj-section>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="600" padding="0 10px 8px 0">About</mj-text>
+          <mj-text color="#999999" padding="0 10px 0 0">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="600" padding="0 5px 8px 5px">Contact Info</mj-text>
+          <mj-text color="#b3b3b3" padding="0 5px 8px 5px">203 Fake St. Mountain View, San Francisco, California, USA</mj-text>
+          <mj-text color="#b3b3b3" padding="0 5px 0 5px">+2 392 3929 210</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="600" padding="0 0 8px 10px">Useful Links</mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Home</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">About</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Services</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 0 10px"><a href="#" style="color:#fff;text-decoration:none;">Work</a></mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="20px 0 0 0">
+        <mj-column width="60%">
+          <mj-text color="#808080" font-size="13px">&copy; 2026 Clutch. All rights reserved.</mj-text>
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text color="#808080" font-size="13px" align="right"><a href="#" style="color:#808080;text-decoration:underline;">Unsubscribe</a></mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

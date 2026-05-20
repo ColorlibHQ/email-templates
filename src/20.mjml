@@ -1,0 +1,229 @@
+<mjml>
+  <mj-head>
+    <mj-title>Eventos — Developer Conference 2019</mj-title>
+    <mj-preview>Developer Conference 2019. December 15 to 20. Join us.</mj-preview>
+
+    <mj-font name="Work Sans" href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Work Sans, Arial, sans-serif" />
+      <mj-text color="#666666" font-size="15px" />
+      <mj-button background-color="#ff8b00" color="#ffffff" border-radius="5px" />
+      <mj-class name="h2" color="#000000" font-size="28px" line-height="1.4" font-weight="400" padding="0 0 14px 0" />
+      <mj-class name="h2-white" color="#ffffff" font-size="28px" line-height="1.4" font-weight="400" padding="0 0 14px 0" />
+      <mj-class name="h3" color="#000000" font-size="18px" line-height="1.3" font-weight="400" padding="0 0 8px 0" />
+      <mj-class name="sub-white" font-size="13px" letter-spacing="2px" text-transform="uppercase" color="#a0a0a0" padding="0 0 14px 0" />
+      <mj-class name="white-body" color="#d9d9d9" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #ff8b00; }
+      .sub-underline { display:inline-block; padding-bottom:6px; border-bottom:2px solid #ff8b00; }
+      .counter-num { display:block; color:#ffffff; font-size:34px; font-weight:700; line-height:1.1; }
+      .counter-name { display:block; color:#e6e6e6; font-size:13px; letter-spacing:1px; }
+      .read-more { text-transform:uppercase; font-weight:600; font-size:12px; color:#ff8b00; text-decoration:none; }
+      .hero-title { color:#ffffff; font-size:30px; font-weight:400; line-height:1.4; margin:0 0 10px 0; }
+      .hero-date { color:#ffffff; font-size:14px; letter-spacing:2px; text-transform:uppercase; margin:0 0 18px 0; }
+      .hero-cta { display:inline-block; background:#ff8b00; color:#ffffff; padding:10px 26px; border-radius:5px; font-weight:600; font-size:14px; text-decoration:none; }
+      .topic-meta { font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#ff8b00; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f1f1f1" width="600px">
+
+    <!-- Logo -->
+    <mj-section background-color="#fafafa" padding="20px 30px 16px 30px">
+      <mj-column>
+        <mj-text align="center" font-weight="700" font-size="20px" padding="0">
+          <a href="#" style="color:#000;text-decoration:none;">Eventos</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-hero mode="fixed-height" height="400px" background-url="images/bg_1.jpg" background-color="#222222" background-position="center center" padding="40px 24px">
+      <mj-text align="center" mj-class="h2-white" font-size="30px">Developer Conference 2019</mj-text>
+      <mj-text align="center" mj-class="white-body" padding="0 0 18px 0">December 15 to 20 2018</mj-text>
+      <mj-button href="#" align="center">Join Conference</mj-button>
+    </mj-hero>
+
+    <!-- About Eventos (dark) -->
+    <mj-section background-color="#333333" padding="40px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="sub-white"><span class="sub-underline">Welcome</span></mj-text>
+        <mj-text align="center" mj-class="h2-white">About Eventos</mj-text>
+        <mj-text align="center" mj-class="white-body">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Our Services -->
+    <mj-section background-color="#fafafa" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Our Services</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafafa" padding="0 20px 10px 20px">
+      <mj-column>
+        <mj-image src="images/megaphone.png" alt="Speakers" width="50px" padding="10px" />
+        <mj-text align="center" mj-class="h3">Speakers</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries</mj-text>
+        <mj-text align="center" padding="6px 0 0 0"><a href="#" class="read-more">Read more</a></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/work.png" alt="Session" width="50px" padding="10px" />
+        <mj-text align="center" mj-class="h3">Session</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries</mj-text>
+        <mj-text align="center" padding="6px 0 0 0"><a href="#" class="read-more">Read more</a></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafafa" padding="0 20px 30px 20px">
+      <mj-column>
+        <mj-image src="images/network.png" alt="Workshops" width="50px" padding="10px" />
+        <mj-text align="center" mj-class="h3">Workshops</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries</mj-text>
+        <mj-text align="center" padding="6px 0 0 0"><a href="#" class="read-more">Read more</a></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/ticket.png" alt="Tickets" width="50px" padding="10px" />
+        <mj-text align="center" mj-class="h3">Tickets</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries</mj-text>
+        <mj-text align="center" padding="6px 0 0 0"><a href="#" class="read-more">Read more</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Counter -->
+    <mj-section background-url="images/bg_1.jpg" background-size="cover" background-position="center center" background-color="#222222" padding="60px 20px">
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">1000</span><span class="counter-name">Speakers</span></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">5200</span><span class="counter-name">Workshops</span></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">4000</span><span class="counter-name">Tickets</span></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Schedules -->
+    <mj-section background-color="#ffffff" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Schedules</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Schedule row 1 -->
+    <mj-section background-color="#ffffff" padding="20px 30px" border-bottom="1px solid #efefef">
+      <mj-column width="30%" vertical-align="middle">
+        <mj-image src="images/person_1.jpg" alt="" width="120px" align="left" padding="0" />
+      </mj-column>
+      <mj-column width="70%" vertical-align="middle">
+        <mj-text padding="0 0 6px 0"><span class="topic-meta">09:00 am - 12:00 am</span></mj-text>
+        <mj-text mj-class="h3" font-size="20px" padding="0 0 8px 0">Best Practices For Programming WordPress</mj-text>
+        <mj-text font-size="13px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Schedule row 2 -->
+    <mj-section background-color="#ffffff" padding="20px 30px" border-bottom="1px solid #efefef">
+      <mj-column width="30%" vertical-align="middle">
+        <mj-image src="images/person_2.jpg" alt="" width="120px" align="left" padding="0" />
+      </mj-column>
+      <mj-column width="70%" vertical-align="middle">
+        <mj-text padding="0 0 6px 0"><span class="topic-meta">09:00 am - 12:00 am</span></mj-text>
+        <mj-text mj-class="h3" font-size="20px" padding="0 0 8px 0">Best Practices For Programming WordPress</mj-text>
+        <mj-text font-size="13px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Schedule row 3 -->
+    <mj-section background-color="#ffffff" padding="20px 30px 40px 30px">
+      <mj-column width="30%" vertical-align="middle">
+        <mj-image src="images/person_3.jpg" alt="" width="120px" align="left" padding="0" />
+      </mj-column>
+      <mj-column width="70%" vertical-align="middle">
+        <mj-text padding="0 0 6px 0"><span class="topic-meta">09:00 am - 12:00 am</span></mj-text>
+        <mj-text mj-class="h3" font-size="20px" padding="0 0 8px 0">Best Practices For Programming WordPress</mj-text>
+        <mj-text font-size="13px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Speakers -->
+    <mj-section background-color="#fafafa" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Speakers</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafafa" padding="0 20px 40px 20px">
+      <mj-column>
+        <mj-image src="images/person_1.jpg" alt="Ronald Tuff" width="80px" border-radius="50%" align="center" padding="0 0 14px 0" />
+        <mj-text align="center" font-size="13px" color="#999999" padding="0 0 4px 0">Speaker</mj-text>
+        <mj-text align="center" mj-class="h3" padding="0 0 6px 0">Ronald Tuff</mj-text>
+        <mj-text align="center" font-size="13px">Far far away, behind the word mountains</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/person_2.jpg" alt="William Clarson" width="80px" border-radius="50%" align="center" padding="0 0 14px 0" />
+        <mj-text align="center" font-size="13px" color="#999999" padding="0 0 4px 0">Speaker</mj-text>
+        <mj-text align="center" mj-class="h3" padding="0 0 6px 0">William Clarson</mj-text>
+        <mj-text align="center" font-size="13px">Far far away, behind the word mountains</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/person_3.jpg" alt="William Clarson" width="80px" border-radius="50%" align="center" padding="0 0 14px 0" />
+        <mj-text align="center" font-size="13px" color="#999999" padding="0 0 4px 0">Speaker</mj-text>
+        <mj-text align="center" mj-class="h3" padding="0 0 6px 0">William Clarson</mj-text>
+        <mj-text align="center" font-size="13px">Far far away, behind the word mountains</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Venues (text left + image right) -->
+    <mj-section background-color="#ffffff" padding="0">
+      <mj-column vertical-align="middle">
+        <mj-text mj-class="h3" font-size="18px" padding="30px 30px 2px 30px">Orchard Hotel</mj-text>
+        <mj-text padding="0 30px 14px 30px">123, Green Garden Street, Texas, USA</mj-text>
+        <mj-text mj-class="h3" font-size="18px" padding="0 30px 2px 30px">Orchard Gymnasium</mj-text>
+        <mj-text padding="0 30px 14px 30px">123, Green Garden Street, Texas, USA</mj-text>
+        <mj-text mj-class="h3" font-size="18px" padding="0 30px 2px 30px">Garden Hotel</mj-text>
+        <mj-text padding="0 30px 30px 30px">123, Green Garden Street, Texas, USA</mj-text>
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-image src="images/about.jpg" alt="Venues" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-wrapper background-color="#000000" padding="40px 30px 20px 30px">
+      <mj-section>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="600" padding="0 10px 8px 0">About</mj-text>
+          <mj-text color="#999999" padding="0 10px 0 0">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="600" padding="0 5px 8px 5px">Contact Info</mj-text>
+          <mj-text color="#b3b3b3" padding="0 5px 8px 5px">203 Fake St. Mountain View, San Francisco, California, USA</mj-text>
+          <mj-text color="#b3b3b3" padding="0 5px 0 5px">+2 392 3929 210</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-size="20px" font-weight="600" padding="0 0 8px 10px">Useful Links</mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Home</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Conference</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Events</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 0 10px"><a href="#" style="color:#fff;text-decoration:none;">Blog</a></mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="20px 0 0 0">
+        <mj-column width="60%">
+          <mj-text color="#808080" font-size="13px">&copy; 2026 Eventos. All rights reserved.</mj-text>
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text color="#808080" font-size="13px" align="right"><a href="#" style="color:#808080;text-decoration:underline;">Unsubscribe</a></mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

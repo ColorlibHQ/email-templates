@@ -1,0 +1,6 @@
+<mj-attributes>
+  <mj-section padding="0" />
+  <mj-text padding="0 0 12px 0" line-height="1.7" />
+  <mj-button inner-padding="10px 25px" font-weight="500" font-size="14px" />
+  <mj-image padding="0" />
+</mj-attributes>

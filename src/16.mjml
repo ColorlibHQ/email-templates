@@ -1,0 +1,133 @@
+<mjml>
+  <mj-head>
+    <mj-title>Fitness — Insane Workout</mj-title>
+    <mj-preview>Get fit with our insane workout plans, cardio and body form programs.</mj-preview>
+
+    <mj-font name="Work Sans" href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Work Sans, Arial, sans-serif" />
+      <mj-text color="#d9d9d9" font-size="15px" />
+      <mj-button background-color="#dd0a35" color="#ffffff" border-radius="30px" />
+      <mj-class name="h2" font-family="Work Sans, Arial, sans-serif" color="#000000" font-size="28px" line-height="1.3" font-weight="400" padding="0 0 14px 0" />
+      <mj-class name="h2-white" font-family="Work Sans, Arial, sans-serif" color="#ffffff" font-size="28px" line-height="1.3" font-weight="400" text-transform="uppercase" letter-spacing="1px" padding="0 0 14px 0" />
+      <mj-class name="h3-white" font-family="Work Sans, Arial, sans-serif" color="#ffffff" font-size="22px" line-height="1.3" font-weight="500" padding="0 0 6px 0" />
+      <mj-class name="hero-h2" font-family="Work Sans, Arial, sans-serif" color="#ffffff" font-size="38px" line-height="1.3" font-weight="300" padding="0 0 14px 0" />
+      <mj-class name="sub-white" font-size="13px" letter-spacing="2px" text-transform="uppercase" color="#7a7a7a" padding="0 0 18px 0" />
+      <mj-class name="dark-body" color="#a0a0a0" />
+    </mj-attributes>
+
+    <mj-style>
+      .sub-underline { display:inline-block; padding-bottom:8px; border-bottom:2px solid #dd0a35; }
+      a { color: #dd0a35; }
+      .trainer-role { display:block; font-size:13px; text-transform:uppercase; letter-spacing:1px; color:#7a7a7a; margin-bottom:8px; }
+      .price { display:block; color:#dd0a35; font-size:20px; font-weight:500; margin-bottom:4px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#222222" width="600px">
+
+    <!-- Hero -->
+    <mj-hero mode="fixed-height" height="400px" background-url="images/bg_1.jpg" background-color="#222222" background-position="center center" padding="60px 24px">
+      <mj-text align="center" mj-class="hero-h2">Insane Workout<br />To Get Rid</mj-text>
+      <mj-image src="images/002-play-button.png" alt="Play" width="60px" align="center" href="#" padding="10px 0 0 0" />
+    </mj-hero>
+
+    <!-- Welcome -->
+    <mj-section background-color="#000000" padding="50px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="sub-white"><span class="sub-underline">Welcome</span></mj-text>
+        <mj-text align="center" mj-class="h2-white">Welcome To RestoBar</mj-text>
+        <mj-text align="center" mj-class="dark-body">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Trainer (image left + text right) -->
+    <mj-section background-color="#1a1a1a" padding="0">
+      <mj-column vertical-align="middle">
+        <mj-image src="images/bg_2.jpg" alt="Kris Stanner" padding="0" />
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-text mj-class="h3-white" padding="30px 30px 0 30px">Kris Stanner</mj-text>
+        <mj-text padding="0 30px 8px 30px"><span class="trainer-role">Gym Trainer</span></mj-text>
+        <mj-text mj-class="dark-body" padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 30px 30px">Read more</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Gallery intro -->
+    <mj-section background-color="#000000" padding="50px 30px 20px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="sub-white"><span class="sub-underline">Gallery</span></mj-text>
+        <mj-text align="center" mj-class="h2-white" padding="0">Gallery</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Gallery grid 2x2 -->
+    <mj-section background-color="#000000" padding="0">
+      <mj-column>
+        <mj-image src="images/work-1.jpg" alt="" padding="0" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/work-2.jpg" alt="" padding="0" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#000000" padding="0 0 40px 0">
+      <mj-column>
+        <mj-image src="images/work-3.jpg" alt="" padding="0" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/work-4.jpg" alt="" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Program intro -->
+    <mj-section background-color="#1a1a1a" padding="50px 30px 20px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="sub-white"><span class="sub-underline">Program</span></mj-text>
+        <mj-text align="center" mj-class="h2-white" padding="0">Fitness Program</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Cardio Program row -->
+    <mj-section background-color="#1a1a1a" padding="0 0 30px 0">
+      <mj-column vertical-align="middle">
+        <mj-image src="images/work-1.jpg" alt="Cardio Program" padding="0" />
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-text padding="20px 30px 0 30px"><span class="price">$98<small>/mos</small></span></mj-text>
+        <mj-text mj-class="h3-white" padding="0 30px 6px 30px">Cardio Program</mj-text>
+        <mj-text mj-class="dark-body" padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 20px 30px">Read more</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Body Form Program row -->
+    <mj-section background-color="#1a1a1a" padding="0 0 40px 0">
+      <mj-column vertical-align="middle">
+        <mj-image src="images/work-2.jpg" alt="Body Form Program" padding="0" />
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-text padding="20px 30px 0 30px"><span class="price">$98<small>/mos</small></span></mj-text>
+        <mj-text mj-class="h3-white" padding="0 30px 6px 30px">Body Form Program</mj-text>
+        <mj-text mj-class="dark-body" padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 20px 30px">Read more</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-wrapper background-color="#000000" padding="30px 30px 20px 30px">
+      <mj-section>
+        <mj-column width="60%">
+          <mj-text color="#808080" font-size="13px">&copy; 2026 Fitness. All rights reserved.</mj-text>
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text color="#808080" font-size="13px" align="right"><a href="#" style="color:#808080;text-decoration:underline;">Unsubscribe</a></mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

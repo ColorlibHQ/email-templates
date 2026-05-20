@@ -1,0 +1,220 @@
+<mjml>
+  <mj-head>
+    <mj-title>Real Estate — Buy House in Best Price</mj-title>
+    <mj-preview>Browse the latest properties for sale. Find your dream home today.</mj-preview>
+
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+    <mj-font name="Playfair Display" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Lato, Arial, sans-serif" />
+      <mj-text color="#666666" font-size="15px" />
+      <mj-button background-color="#feb062" color="#ffffff" border-radius="5px" inner-padding="9px 22px" />
+      <mj-class name="h1" font-family="Playfair Display, Georgia, serif" color="#000000" font-size="30px" font-weight="700" padding="0" />
+      <mj-class name="h2" font-family="Playfair Display, Georgia, serif" color="#000000" font-size="28px" line-height="1.4" font-weight="400" padding="0 0 14px 0" />
+      <mj-class name="h2-white" font-family="Playfair Display, Georgia, serif" color="#ffffff" font-size="34px" line-height="1.4" font-weight="700" padding="0 0 14px 0" />
+      <mj-class name="h3" font-family="Playfair Display, Georgia, serif" color="#000000" font-size="18px" line-height="1.3" font-weight="400" padding="0 0 4px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #feb062; }
+      .nav a { color:#000000; font-size:13px; font-weight:500; text-transform:uppercase; text-decoration:none; padding:0 10px; }
+      .accent { color:#feb062; font-weight:600; }
+      .price { display:block; color:#000000; font-size:18px; font-weight:600; }
+      .meta { color:#999999; font-size:13px; }
+      .counter-num { display:block; color:#ffffff; font-size:34px; font-weight:700; font-family:'Playfair Display', Georgia, serif; line-height:1.1; }
+      .counter-name { display:block; color:rgba(255,255,255,.9); font-size:13px; }
+      .feat-h3 { color:#000000; font-size:18px; font-family:'Playfair Display', Georgia, serif; font-weight:400; margin:0 0 2px 0; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f1f1f1" width="600px">
+
+    <!-- Logo -->
+    <mj-section background-color="#ffffff" padding="20px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h1" padding="0">
+          <a href="#" style="color:#000;text-decoration:none;">Real Estate</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Navigation -->
+    <mj-section background-color="#ffffff" padding="14px 30px" border-top="1px solid #f0f0f0" border-bottom="1px solid #f0f0f0">
+      <mj-column>
+        <mj-text align="center" padding="0" css-class="nav">
+          <a href="#">Home</a><a href="#">Properties</a><a href="#">Contact</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-hero mode="fixed-height" height="400px" background-url="images/bg_1.jpg" background-color="#222222" background-position="center center" padding="40px 30px">
+      <mj-text align="center" mj-class="h2-white">Real Estate</mj-text>
+      <mj-text align="center" color="#e6e6e6">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      <mj-button href="#" align="center">Browse Properties</mj-button>
+    </mj-hero>
+
+    <!-- Intro: Buy House -->
+    <mj-section background-color="#ffffff" padding="40px 30px 50px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Buy House in <span class="accent">Best Price</span></mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</mj-text>
+        <mj-button href="#" align="center" background-color="#000000" border-radius="0">Browse Properties</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Our Services -->
+    <mj-section background-color="#fafafa" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Our Services</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafafa" padding="10px 20px 40px 20px">
+      <mj-column>
+        <mj-image src="images/blueprint.png" alt="Layout" width="100px" padding="10px" />
+        <mj-text align="center" mj-class="h3">Layout</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/skyline.png" alt="Design" width="100px" padding="10px" />
+        <mj-text align="center" mj-class="h3">Design</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Properties intro -->
+    <mj-section background-color="#ffffff" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Properties For Sale</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Properties row 1 -->
+    <mj-section background-color="#ffffff" padding="0 20px 10px 20px">
+      <mj-column>
+        <mj-image src="images/properties-1.jpg" alt="Residential House" padding="0 10px 0 0" />
+        <mj-text align="center" mj-class="h3" padding="10px 10px 0 0">Residential House</mj-text>
+        <mj-text align="center" padding="0 10px 4px 0"><span class="meta">100 sqft &middot; 2 Bed &middot; 2 bath</span></mj-text>
+        <mj-text align="center" padding="0 10px 6px 0"><span class="price">$1,000,000</span></mj-text>
+        <mj-text align="center" padding="0 10px 20px 0" font-size="13px">Far far away, behind the word mountains, far from the countries</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/properties-2.jpg" alt="Residential House" padding="0 0 0 10px" />
+        <mj-text align="center" mj-class="h3" padding="10px 0 0 10px">Residential House</mj-text>
+        <mj-text align="center" padding="0 0 4px 10px"><span class="meta">100 sqft &middot; 2 Bed &middot; 2 bath</span></mj-text>
+        <mj-text align="center" padding="0 0 6px 10px"><span class="price">$1,000,000</span></mj-text>
+        <mj-text align="center" padding="0 0 20px 10px" font-size="13px">Far far away, behind the word mountains, far from the countries</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Properties row 2 -->
+    <mj-section background-color="#ffffff" padding="0 20px 40px 20px">
+      <mj-column>
+        <mj-image src="images/properties-3.jpg" alt="Residential House" padding="0 10px 0 0" />
+        <mj-text align="center" mj-class="h3" padding="10px 10px 0 0">Residential House</mj-text>
+        <mj-text align="center" padding="0 10px 4px 0"><span class="meta">100 sqft &middot; 2 Bed &middot; 2 bath</span></mj-text>
+        <mj-text align="center" padding="0 10px 6px 0"><span class="price">$1,000,000</span></mj-text>
+        <mj-text align="center" padding="0 10px 0 0" font-size="13px">Far far away, behind the word mountains, far from the countries</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/properties-4.jpg" alt="Residential House" padding="0 0 0 10px" />
+        <mj-text align="center" mj-class="h3" padding="10px 0 0 10px">Residential House</mj-text>
+        <mj-text align="center" padding="0 0 4px 10px"><span class="meta">100 sqft &middot; 2 Bed &middot; 2 bath</span></mj-text>
+        <mj-text align="center" padding="0 0 6px 10px"><span class="price">$1,000,000</span></mj-text>
+        <mj-text align="center" padding="0 0 0 10px" font-size="13px">Far far away, behind the word mountains, far from the countries</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Counter -->
+    <mj-section background-url="images/bg_1.jpg" background-size="cover" background-position="center center" background-color="#222222" padding="60px 20px">
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">200</span><span class="counter-name">Agents</span></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">1200</span><span class="counter-name">Happy Clients</span></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">1000</span><span class="counter-name">Sold Properties</span></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Features (text left + image right) -->
+    <mj-section background-color="#ffffff" padding="0">
+      <mj-column vertical-align="middle">
+        <mj-text mj-class="h2" padding="40px 30px 14px 30px">Our Features</mj-text>
+        <mj-text padding="0 30px 14px 30px">
+          <h3 class="feat-h3">Responsive</h3>
+          <span style="color:#666;font-size:14px;">A small river named Duden flows by their</span>
+        </mj-text>
+        <mj-text padding="0 30px 14px 30px">
+          <h3 class="feat-h3">Modern Design</h3>
+          <span style="color:#666;font-size:14px;">A small river named Duden flows by their</span>
+        </mj-text>
+        <mj-text padding="0 30px 40px 30px">
+          <h3 class="feat-h3">Minimal Design</h3>
+          <span style="color:#666;font-size:14px;">A small river named Duden flows by their</span>
+        </mj-text>
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-image src="images/about.jpg" alt="Our Features" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Start Browsing CTA -->
+    <mj-section background-color="#ffffff" padding="30px 20px">
+      <mj-column>
+        <mj-button href="#" align="center" background-color="#ffffff" color="#000000" border="2px solid #000000" border-radius="0" font-weight="700">Start Browsing</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Newsletter + social -->
+    <mj-section background-color="#ffffff" padding="20px 30px" border-top="1px solid #f0f0f0">
+      <mj-column width="60%" vertical-align="middle">
+        <mj-text mj-class="h3" font-size="20px" padding="0">Stay Updated On Newest Properties</mj-text>
+      </mj-column>
+      <mj-column width="40%" vertical-align="middle">
+        <mj-text align="right" padding="0">
+          <a href="#" style="display:inline-block;margin-left:8px;text-decoration:none;"><img src="images/004-twitter-logo.png" alt="Twitter" width="24" style="display:inline-block;border:0;vertical-align:middle;" /></a>
+          <a href="#" style="display:inline-block;margin-left:8px;text-decoration:none;"><img src="images/005-facebook.png" alt="Facebook" width="24" style="display:inline-block;border:0;vertical-align:middle;" /></a>
+          <a href="#" style="display:inline-block;margin-left:8px;text-decoration:none;"><img src="images/006-instagram-logo.png" alt="Instagram" width="24" style="display:inline-block;border:0;vertical-align:middle;" /></a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-wrapper background-color="#000000" padding="40px 30px 20px 30px">
+      <mj-section>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif" font-size="20px" font-weight="700" padding="0 10px 8px 0">Real Estate</mj-text>
+          <mj-text color="#999999" padding="0 10px 0 0">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif" font-size="20px" font-weight="700" padding="0 5px 8px 5px">Contact Info</mj-text>
+          <mj-text color="#b3b3b3" padding="0 5px 8px 5px">203 Fake St. Mountain View, San Francisco, California, USA</mj-text>
+          <mj-text color="#b3b3b3" padding="0 5px 0 5px">+2 392 3929 210</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif" font-size="20px" font-weight="700" padding="0 0 8px 10px">Useful Links</mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Home</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Properties</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 0 10px"><a href="#" style="color:#fff;text-decoration:none;">Contact</a></mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="20px 0 0 0">
+        <mj-column width="60%">
+          <mj-text color="#808080" font-size="13px">&copy; 2026 Real Estate. All rights reserved.</mj-text>
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text color="#808080" font-size="13px" align="right"><a href="#" style="color:#808080;text-decoration:underline;">Unsubscribe</a></mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

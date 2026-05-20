@@ -2,7 +2,9 @@
 
 Free HTML email templates for Mailchimp and other emails services
 
-Huge selection of the best free email templates you will ever find. All templates are responsive and will work with all popular emails such as Gmail, Outlook and ohers. You can use these templates with MailChimp or any other email delivery service. 
+Huge selection of the best free email templates you will ever find. All templates are responsive and will work with all popular email clients such as Gmail, Outlook, and others. You can use these templates with Mailchimp or any other email delivery service.
+
+All 20 templates are written in **[MJML](https://mjml.io)** and compiled to bulletproof, table-based HTML — so they render reliably in Outlook (Windows) as well as modern web/mobile clients. You can either use the pre-built `N/index.html` files directly, or [build from source](#development) to customize.
 
 # Here is a preview of one of the templates
 
@@ -20,6 +22,7 @@ A curated collection of free, responsive HTML email templates by Colorlib. Built
 - [Features](#features)
 - [Preview](#preview)
 - [Quick Start](#quick-start)
+- [Development](#development)
 - [How to Use](#how-to-use)
 - [Customization](#customization)
 - [CSS Inlining](#css-inlining)
@@ -28,6 +31,7 @@ A curated collection of free, responsive HTML email templates by Colorlib. Built
 - [Recommended Workflow](#recommended-workflow)
 - [FAQ](#faq)
 - [Contributing](#contributing)
+- [Changelog](#changelog)
 - [License](#license)
 - [Credits](#credits)
 
@@ -41,7 +45,8 @@ A curated collection of free, responsive HTML email templates by Colorlib. Built
 
 ## Preview
 
-- Open any template’s `index.html` locally in your browser for a quick visual check.
+- Open `index.html` at the repository root for a **gallery view** linking to all 20 templates.
+- Open any individual template's `N/index.html` directly for a quick visual check.
 - For real email client previews, upload a template to your ESP (e.g., Mailchimp, Campaign Monitor, SendGrid) or use a rendering service (Litmus, Email on Acid).
 
 ## Quick Start
@@ -60,11 +65,27 @@ start path\to\template\index.html # Windows
 xdg-open path/to/template/index.html # Linux
 ```
 
+## Development
+
+The HTML files are built from MJML sources. If you want to customize templates beyond simple find-and-replace, work in `src/N.mjml` and rebuild — don't edit `N/index.html` directly (it will be overwritten).
+
+```bash
+npm install            # one-time: installs mjml, browser-sync, chokidar
+npm run build          # compile every src/N.mjml → N/index.html
+npm run dev            # watch + live-reload at http://localhost:3000/
+```
+
+`npm run dev` opens the gallery index and live-reloads when you save any `src/*.mjml`. Saving a partial in `src/partials/` rebuilds every template.
+
+Requirements: **Node.js ≥ 20.19** (chokidar 5 is ESM-only).
+
+To add a new template (e.g., `21`): copy a structurally similar `src/N.mjml` to `src/21.mjml`, drop assets in `21/images/`, run `npm run build`. The build picks up any numeric filename matching `^\d+\.mjml$`. See [CLAUDE.md](CLAUDE.md) for layout patterns and MJML gotchas.
+
 ## How to Use
 
-1. Pick a template folder and open `index.html` in your code editor.
+1. Pick a template folder and open `index.html` in your code editor (or edit `src/N.mjml` if you've cloned for development — see [Development](#development)).
 2. Replace placeholder text, links, and images with your content.
-3. Inline CSS if needed (many ESPs do this for you—see “CSS Inlining” below).
+3. Inline CSS if needed (many ESPs do this for you — see [CSS Inlining](#css-inlining) below).
 4. Upload the HTML into your Email Service Provider (ESP) or send via your application.
 5. Test across devices and clients before sending to your full list.
 
@@ -148,11 +169,16 @@ Known considerations:
 ## Contributing
 
 Contributions are welcome!
-- Add new templates or layout variations
+
+- Add new templates or layout variations (edit `src/N.mjml`, then `npm run build`)
 - Fix rendering quirks for specific clients
 - Improve accessibility, performance, or documentation
 
-Open an issue or submit a pull request with a clear description and, if possible, screenshots from major clients.
+Open an issue or submit a pull request with a clear description and, if possible, screenshots from major clients. See [CLAUDE.md](CLAUDE.md) for layout patterns and known MJML gotchas, and update [CHANGELOG.md](CHANGELOG.md) for any user-visible change.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for the full history. The headline change: every template is now generated from MJML sources in `src/`, with substantially improved Outlook compatibility and a unified build pipeline.
 
 ## License
 

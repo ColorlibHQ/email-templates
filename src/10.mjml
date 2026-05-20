@@ -1,0 +1,80 @@
+<mjml>
+  <mj-head>
+    <mj-title>Please verify your email — e-Verify</mj-title>
+    <mj-preview>Confirm your subscription to receive amazing deals and updates.</mj-preview>
+
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Lato, Arial, sans-serif" />
+      <mj-text color="#666666" font-size="15px" />
+      <mj-button background-color="#30e3ca" color="#ffffff" border-radius="30px" inner-padding="12px 32px" font-weight="600" />
+      <mj-class name="h2" color="#000000" font-size="28px" line-height="1.3" font-weight="700" padding="0 0 14px 0" />
+      <mj-class name="h3" color="#666666" font-size="16px" line-height="1.4" font-weight="400" padding="0 0 20px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #30e3ca; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f1f1f1" width="600px">
+
+    <!-- Logo -->
+    <mj-section background-color="#ffffff" padding="30px 0 10px 0">
+      <mj-column>
+        <mj-text align="center" font-weight="700" font-size="22px" letter-spacing="1px" text-transform="uppercase" padding="0">
+          <a href="#" style="color:#000;text-decoration:none;">e-Verify</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero illustration -->
+    <mj-section background-color="#ffffff" padding="40px 0 20px 0">
+      <mj-column>
+        <mj-image src="images/email.png" alt="Verify your email" width="300px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Headline + CTA -->
+    <mj-section background-color="#ffffff" padding="20px 30px 60px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Please verify your email</mj-text>
+        <mj-text align="center" mj-class="h3">Amazing deals, updates, interesting news right in your inbox.</mj-text>
+        <mj-button href="#" align="center">Yes! Subscribe Me</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer (3-col on light bg) -->
+    <mj-wrapper background-color="#fafafa" padding="40px 30px 20px 30px">
+      <mj-section>
+        <mj-column width="33.33%">
+          <mj-text color="#000000" font-size="18px" font-weight="700" padding="0 10px 8px 0">About</mj-text>
+          <mj-text color="#808080" font-size="13px" padding="0 10px 0 0">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#000000" font-size="18px" font-weight="700" padding="0 5px 8px 5px">Contact Info</mj-text>
+          <mj-text color="#808080" font-size="13px" padding="0 5px 8px 5px">203 Fake St. Mountain View, San Francisco, California, USA</mj-text>
+          <mj-text color="#808080" font-size="13px" padding="0 5px 0 5px">+2 392 3929 210</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#000000" font-size="18px" font-weight="700" padding="0 0 8px 10px">Useful Links</mj-text>
+          <mj-text font-size="13px" padding="0 0 6px 10px"><a href="#" style="color:#000;text-decoration:none;">Home</a></mj-text>
+          <mj-text font-size="13px" padding="0 0 6px 10px"><a href="#" style="color:#000;text-decoration:none;">About</a></mj-text>
+          <mj-text font-size="13px" padding="0 0 6px 10px"><a href="#" style="color:#000;text-decoration:none;">Services</a></mj-text>
+          <mj-text font-size="13px" padding="0 0 0 10px"><a href="#" style="color:#000;text-decoration:none;">Work</a></mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Unsubscribe row -->
+    <mj-section background-color="#f1f1f1" padding="20px 30px">
+      <mj-column>
+        <mj-text align="center" color="#808080" font-size="13px">No longer want to receive these emails? You can <a href="#" style="color:#000;">unsubscribe here</a>.</mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

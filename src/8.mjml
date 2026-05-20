@@ -1,0 +1,172 @@
+<mjml>
+  <mj-head>
+    <mj-title>Elise — Up to 50% off Selected Womens Items</mj-title>
+    <mj-preview>Up to 50% off Selected Womens Items. Fashion your self this season.</mj-preview>
+
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+    <mj-font name="Playfair Display" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Lato, Arial, sans-serif" />
+      <mj-text color="#808080" font-size="15px" />
+      <mj-button background-color="#000000" color="#ffffff" border-radius="0" inner-padding="10px 22px" font-weight="700" font-size="13px" />
+      <mj-class name="h1" font-family="'Playfair Display', Georgia, serif" font-style="italic" color="#000000" font-size="30px" font-weight="700" padding="0" />
+      <mj-class name="h2" font-family="'Playfair Display', Georgia, serif" color="#000000" font-size="30px" line-height="1.3" font-weight="400" padding="0 0 10px 0" />
+      <mj-class name="h2-white" font-family="'Playfair Display', Georgia, serif" color="#ffffff" font-size="30px" line-height="1.4" font-weight="300" padding="0 0 10px 0" />
+      <mj-class name="h3" font-family="Lato, Arial, sans-serif" color="#000000" font-size="20px" font-weight="700" padding="0 0 6px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #ffc0d0; }
+      .nav a { color:#000000; font-size:13px; font-weight:500; letter-spacing:2px; text-transform:uppercase; text-decoration:none; padding:0 8px; }
+      .price-tag { display:inline-block; color:#ffffff; font-size:20px; border:2px solid #ffffff; padding:0 10px; margin-bottom:10px; }
+      .hero-accent { color:#ffc0d0; font-weight:600; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f1f1f1" width="600px">
+
+    <!-- Logo -->
+    <mj-section background-color="#ffffff" padding="20px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h1">
+          <a href="#" style="color:#000000;text-decoration:none;font-style:italic;">Elise</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Navigation -->
+    <mj-section background-color="#ffffff" padding="10px 30px 10px 30px" border-top="1px solid #f2f2f2" border-bottom="1px solid #f2f2f2">
+      <mj-column>
+        <mj-text align="center" padding="0" css-class="nav">
+          <a href="#">Home</a><a href="#">New</a><a href="#">Women</a><a href="#">Kids</a><a href="#">Blog</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-hero mode="fixed-height" height="400px" background-url="images/bg_1.jpg" background-color="#222222" background-position="center center" padding="40px 24px">
+      <mj-text align="center" mj-class="h2-white">Up to 50% off <span class="hero-accent">Selected Womens Items</span></mj-text>
+      <mj-text align="center" color="#f2f2f2" padding="0 0 14px 0">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      <mj-button href="#" align="center" background-color="#ffc0d0" color="#ffffff" border-radius="5px">Start Shopping</mj-button>
+    </mj-hero>
+
+    <!-- Intro -->
+    <mj-section background-color="#ffffff" padding="40px 30px 50px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2" font-size="34px">Fashion your self this season</mj-text>
+        <mj-text align="center" padding="0 0 18px 0">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</mj-text>
+        <mj-button href="#" align="center">Browse Shop</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Product 1: text + image -->
+    <mj-section background-color="#ffc0d0" padding="0">
+      <mj-column vertical-align="middle" width="50%">
+        <mj-text padding="20px 30px 0 30px"><span class="price-tag">$100.00</span></mj-text>
+        <mj-text mj-class="h3" color="#ffffff" padding="0 30px 6px 30px">Young Woman Dress</mj-text>
+        <mj-text color="#ffffff" padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 20px 30px">Shop now</mj-button>
+      </mj-column>
+      <mj-column vertical-align="middle" width="50%">
+        <mj-image src="images/product-1.jpg" alt="Young Woman Dress" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Product 2: image + text -->
+    <mj-section background-color="#ffc0d0" padding="0">
+      <mj-column vertical-align="middle" width="50%">
+        <mj-image src="images/product-2.jpg" alt="Young Woman Dress" padding="0" />
+      </mj-column>
+      <mj-column vertical-align="middle" width="50%">
+        <mj-text padding="20px 30px 0 30px"><span class="price-tag">$100.00</span></mj-text>
+        <mj-text mj-class="h3" color="#ffffff" padding="0 30px 6px 30px">Young Woman Dress</mj-text>
+        <mj-text color="#ffffff" padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 20px 30px">Shop now</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Product 3: text + image -->
+    <mj-section background-color="#ffc0d0" padding="0">
+      <mj-column vertical-align="middle" width="50%">
+        <mj-text padding="20px 30px 0 30px"><span class="price-tag">$100.00</span></mj-text>
+        <mj-text mj-class="h3" color="#ffffff" padding="0 30px 6px 30px">Young Woman Dress</mj-text>
+        <mj-text color="#ffffff" padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 20px 30px">Shop now</mj-button>
+      </mj-column>
+      <mj-column vertical-align="middle" width="50%">
+        <mj-image src="images/product-3.jpg" alt="Young Woman Dress" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Product 4: image + text -->
+    <mj-section background-color="#ffc0d0" padding="0">
+      <mj-column vertical-align="middle" width="50%">
+        <mj-image src="images/product-4.jpg" alt="Young Woman Dress" padding="0" />
+      </mj-column>
+      <mj-column vertical-align="middle" width="50%">
+        <mj-text padding="20px 30px 0 30px"><span class="price-tag">$100.00</span></mj-text>
+        <mj-text mj-class="h3" color="#ffffff" padding="0 30px 6px 30px">Young Woman Dress</mj-text>
+        <mj-text color="#ffffff" padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 20px 30px">Shop now</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Product 5: text + image -->
+    <mj-section background-color="#ffc0d0" padding="0">
+      <mj-column vertical-align="middle" width="50%">
+        <mj-text padding="20px 30px 0 30px"><span class="price-tag">$100.00</span></mj-text>
+        <mj-text mj-class="h3" color="#ffffff" padding="0 30px 6px 30px">Young Woman Dress</mj-text>
+        <mj-text color="#ffffff" padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 20px 30px">Shop now</mj-button>
+      </mj-column>
+      <mj-column vertical-align="middle" width="50%">
+        <mj-image src="images/product-5.jpg" alt="Young Woman Dress" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Product 6: image + text -->
+    <mj-section background-color="#ffc0d0" padding="0">
+      <mj-column vertical-align="middle" width="50%">
+        <mj-image src="images/product-6.jpg" alt="Young Woman Dress" padding="0" />
+      </mj-column>
+      <mj-column vertical-align="middle" width="50%">
+        <mj-text padding="20px 30px 0 30px"><span class="price-tag">$100.00</span></mj-text>
+        <mj-text mj-class="h3" color="#ffffff" padding="0 30px 6px 30px">Young Woman Dress</mj-text>
+        <mj-text color="#ffffff" padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 20px 30px">Shop now</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Outline CTA -->
+    <mj-section background-color="#ffffff" padding="40px 30px">
+      <mj-column>
+        <mj-button href="#" align="center" background-color="#ffffff" color="#000000" border="2px solid #000000" border-radius="0" font-weight="700">Start Shopping</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Social row -->
+    <mj-section background-color="#ffffff" padding="0 30px 30px 30px" border-top="1px solid #f2f2f2">
+      <mj-column width="60%" vertical-align="middle">
+        <mj-text font-family="'Playfair Display', Georgia, serif" color="#000000" font-size="20px" padding="20px 0 0 0">Stay Updated On Our Shopping</mj-text>
+      </mj-column>
+      <mj-column width="40%" vertical-align="middle">
+        <mj-social icon-size="24px" mode="horizontal" align="right" padding="20px 0 0 0" inner-padding="0 6px">
+          <mj-social-element src="images/004-twitter-logo.png" href="#" alt="Twitter" background-color="transparent" />
+          <mj-social-element src="images/005-facebook.png" href="#" alt="Facebook" background-color="transparent" />
+          <mj-social-element src="images/006-instagram-logo.png" href="#" alt="Instagram" background-color="transparent" />
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer unsubscribe -->
+    <mj-section background-color="#fafafa" padding="20px 30px">
+      <mj-column>
+        <mj-text align="center" color="#808080" font-size="13px">No longer want to receive these emails? You can <a href="#" style="color:#000000;">unsubscribe here</a>.</mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

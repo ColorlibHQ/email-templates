@@ -1,0 +1,215 @@
+<mjml>
+  <mj-head>
+    <mj-title>Church — Ministries &amp; Services</mj-title>
+    <mj-preview>Welcome to our church. Discover our ministries, services and charity.</mj-preview>
+
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+    <mj-font name="Playfair Display" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Lato, Arial, sans-serif" />
+      <mj-text color="#666666" font-size="15px" />
+      <mj-button background-color="#74b49b" color="#ffffff" border-radius="5px" />
+      <mj-class name="h2" font-family="Playfair Display, Georgia, serif" color="#000000" font-size="28px" line-height="1.4" font-weight="400" padding="0 0 14px 0" />
+      <mj-class name="h3" font-family="Playfair Display, Georgia, serif" color="#000000" font-size="18px" line-height="1.3" font-weight="400" padding="0 0 8px 0" />
+      <mj-class name="sub" font-size="13px" letter-spacing="2px" text-transform="uppercase" color="#999999" padding="0 0 18px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #74b49b; }
+      .sub-underline { display:inline-block; padding-bottom:8px; border-bottom:2px solid #74b49b; }
+      .ministry-title a { color:#000000; text-decoration:none; }
+      .counter-num { display:block; color:#ffffff; font-size:34px; font-weight:700; line-height:1.1; }
+      .counter-name { display:block; color:#e6e6e6; font-size:13px; letter-spacing:1px; }
+      .social-icon { display:inline-block; margin:0 6px; padding:10px; border-radius:50%; background:#f2f2f2; }
+      .read-more { text-transform:uppercase; font-weight:600; font-size:12px; color:#74b49b; text-decoration:none; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f1f1f1" width="600px">
+
+    <!-- Logo -->
+    <mj-section background-color="#fafafa" padding="20px 30px 16px 30px">
+      <mj-column>
+        <mj-text align="center" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="20px" padding="0">
+          <a href="#" style="color:#000;text-decoration:none;">Church</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Social icons -->
+    <mj-section background-color="#ffffff" padding="20px 30px">
+      <mj-column>
+        <mj-text align="center" padding="0">
+          <a href="#" class="social-icon"><img src="images/004-twitter-logo.png" alt="Twitter" width="16" style="display:block;border:0;" /></a>
+          <a href="#" class="social-icon"><img src="images/005-facebook.png" alt="Facebook" width="16" style="display:block;border:0;" /></a>
+          <a href="#" class="social-icon"><img src="images/006-instagram-logo.png" alt="Instagram" width="16" style="display:block;border:0;" /></a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-hero mode="fixed-height" height="400px" background-url="images/bg_1.jpg" background-color="#222222" background-position="center center" padding="0">
+      <mj-text padding="0">&nbsp;</mj-text>
+    </mj-hero>
+
+    <!-- Ministries -->
+    <mj-section background-color="#ffffff" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Ministries</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 20px 30px 20px">
+      <mj-column>
+        <mj-image src="images/ministry-1.jpg" alt="Children" href="#" padding="0 10px 14px 0" />
+        <mj-text align="center" mj-class="h3" css-class="ministry-title"><a href="#">Children</a></mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/ministry-2.jpg" alt="Youth" href="#" padding="0 0 14px 10px" />
+        <mj-text align="center" mj-class="h3" css-class="ministry-title"><a href="#">Youth</a></mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Our Services -->
+    <mj-section background-color="#fafafa" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Our Services</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafafa" padding="0 20px 10px 20px">
+      <mj-column>
+        <mj-image src="images/1.png" alt="Baptism" width="50px" padding="10px" />
+        <mj-text align="center" mj-class="h3">Baptism</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries</mj-text>
+        <mj-text align="center" padding="6px 0 0 0"><a href="#" class="read-more">Read more</a></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/2.png" alt="Wedding" width="50px" padding="10px" />
+        <mj-text align="center" mj-class="h3">Wedding</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries</mj-text>
+        <mj-text align="center" padding="6px 0 0 0"><a href="#" class="read-more">Read more</a></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafafa" padding="0 20px 30px 20px">
+      <mj-column>
+        <mj-image src="images/3.png" alt="Education" width="50px" padding="10px" />
+        <mj-text align="center" mj-class="h3">Education</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries</mj-text>
+        <mj-text align="center" padding="6px 0 0 0"><a href="#" class="read-more">Read more</a></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/4.png" alt="Funerals" width="50px" padding="10px" />
+        <mj-text align="center" mj-class="h3">Funerals</mj-text>
+        <mj-text align="center">Far far away, behind the word mountains, far from the countries</mj-text>
+        <mj-text align="center" padding="6px 0 0 0"><a href="#" class="read-more">Read more</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Counter -->
+    <mj-section background-url="images/bg_1.jpg" background-size="cover" background-position="center center" background-color="#222222" padding="60px 20px">
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">21,000</span><span class="counter-name">Members</span></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">5200</span><span class="counter-name">Church Branches</span></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="counter-num">4000</span><span class="counter-name">Ministries</span></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Pastors -->
+    <mj-section background-color="#fafafa" padding="40px 30px 10px 30px">
+      <mj-column>
+        <mj-text align="center" mj-class="h2">Pastors</mj-text>
+        <mj-text align="center">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafafa" padding="0 20px 40px 20px">
+      <mj-column>
+        <mj-image src="images/person_1.jpg" alt="Ronald Tuff" width="80px" border-radius="50%" align="center" padding="0 0 14px 0" />
+        <mj-text align="center" font-size="13px" color="#999999" padding="0 0 4px 0">Pastor</mj-text>
+        <mj-text align="center" mj-class="h3" padding="0 0 6px 0">Ronald Tuff</mj-text>
+        <mj-text align="center" font-size="13px">Far far away, behind the word mountains</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/person_2.jpg" alt="William Clarson" width="80px" border-radius="50%" align="center" padding="0 0 14px 0" />
+        <mj-text align="center" font-size="13px" color="#999999" padding="0 0 4px 0">Pastor</mj-text>
+        <mj-text align="center" mj-class="h3" padding="0 0 6px 0">William Clarson</mj-text>
+        <mj-text align="center" font-size="13px">Far far away, behind the word mountains</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="images/person_3.jpg" alt="William Clarson" width="80px" border-radius="50%" align="center" padding="0 0 14px 0" />
+        <mj-text align="center" font-size="13px" color="#999999" padding="0 0 4px 0">Pastor</mj-text>
+        <mj-text align="center" mj-class="h3" padding="0 0 6px 0">William Clarson</mj-text>
+        <mj-text align="center" font-size="13px">Far far away, behind the word mountains</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What we do (text left + image right) -->
+    <mj-section background-color="#ffffff" padding="0">
+      <mj-column vertical-align="middle">
+        <mj-text mj-class="h2" padding="30px 30px 14px 30px">What we do?</mj-text>
+        <mj-text mj-class="h3" font-size="16px" padding="0 30px 2px 30px">Donate</mj-text>
+        <mj-text padding="0 30px 14px 30px">A small river named Duden flows by their</mj-text>
+        <mj-text mj-class="h3" font-size="16px" padding="0 30px 2px 30px">Evangelical</mj-text>
+        <mj-text padding="0 30px 14px 30px">A small river named Duden flows by their</mj-text>
+        <mj-text mj-class="h3" font-size="16px" padding="0 30px 2px 30px">Ministries</mj-text>
+        <mj-text padding="0 30px 30px 30px">A small river named Duden flows by their</mj-text>
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-image src="images/about.jpg" alt="What we do" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Charity (image left + text right) -->
+    <mj-section background-color="#fafafa" padding="0">
+      <mj-column vertical-align="middle">
+        <mj-image src="images/about-2.jpg" alt="Charity" padding="0" />
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-text mj-class="h2" font-size="22px" padding="30px 30px 8px 30px">Charity</mj-text>
+        <mj-text padding="0 30px 14px 30px">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        <mj-button href="#" align="left" padding="0 30px 30px 30px">Donate Now</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-wrapper background-color="#000000" padding="40px 30px 20px 30px">
+      <mj-section>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif" font-size="20px" font-weight="700" padding="0 10px 8px 0">Church</mj-text>
+          <mj-text color="#999999" padding="0 10px 0 0">A small river named Duden flows by their place and supplies it with the necessary regelialia.</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif" font-size="20px" font-weight="700" padding="0 5px 8px 5px">Contact Info</mj-text>
+          <mj-text color="#b3b3b3" padding="0 5px 8px 5px">203 Fake St. Mountain View, San Francisco, California, USA</mj-text>
+          <mj-text color="#b3b3b3" padding="0 5px 0 5px">+2 392 3929 210</mj-text>
+        </mj-column>
+        <mj-column width="33.33%">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif" font-size="20px" font-weight="700" padding="0 0 8px 10px">Useful Links</mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Home</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Ministries</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 6px 10px"><a href="#" style="color:#fff;text-decoration:none;">Services</a></mj-text>
+          <mj-text color="#d9d9d9" padding="0 0 0 10px"><a href="#" style="color:#fff;text-decoration:none;">Charity</a></mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="20px 0 0 0">
+        <mj-column width="60%">
+          <mj-text color="#808080" font-size="13px">&copy; 2026 Church. All rights reserved.</mj-text>
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text color="#808080" font-size="13px" align="right"><a href="#" style="color:#808080;text-decoration:underline;">Unsubscribe</a></mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

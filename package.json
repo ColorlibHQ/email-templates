@@ -1,0 +1,17 @@
+{
+  "name": "colorlib-email-templates",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "chokidar": "^5.0.0",
+    "mjml": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}

@@ -1,569 +1,1103 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
-    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
-    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
-
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
-
-    <!-- CSS Reset : BEGIN -->
-    <style>
-
-        /* What it does: Remove spaces around the email design added by some email clients. */
-        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
-        html,
-body {
-    margin: 0 auto !important;
-    padding: 0 !important;
-    height: 100% !important;
-    width: 100% !important;
-    background: #f1f1f1;
-}
-
-/* What it does: Stops email clients resizing small text. */
-* {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-/* What it does: Centers email on Android 4.4 */
-div[style*="margin: 16px 0"] {
-    margin: 0 !important;
-}
-
-/* What it does: Stops Outlook from adding extra spacing to tables. */
-table,
-td {
-    mso-table-lspace: 0pt !important;
-    mso-table-rspace: 0pt !important;
-}
-
-/* What it does: Fixes webkit padding issue. */
-table {
-    border-spacing: 0 !important;
-    border-collapse: collapse !important;
-    table-layout: fixed !important;
-    margin: 0 auto !important;
-}
-
-/* What it does: Uses a better rendering method when resizing images in IE. */
-img {
-    -ms-interpolation-mode:bicubic;
-}
-
-/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
-a {
-    text-decoration: none;
-}
-
-/* What it does: A work-around for email clients meddling in triggered links. */
-*[x-apple-data-detectors],  /* iOS */
-.unstyle-auto-detected-links *,
-.aBn {
-    border-bottom: 0 !important;
-    cursor: default !important;
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-}
-
-/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
-.a6S {
-    display: none !important;
-    opacity: 0.01 !important;
-}
-
-/* What it does: Prevents Gmail from changing the text color in conversation threads. */
-.im {
-    color: inherit !important;
-}
-
-/* If the above doesn't work, add a .g-img class to any image in question. */
-img.g-img + div {
-    display: none !important;
-}
-
-/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
-/* Create one of these media queries for each additional viewport size you'd like to fix */
-
-/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
-@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
-    u ~ div .email-container {
-        min-width: 320px !important;
-    }
-}
-/* iPhone 6, 6S, 7, 8, and X */
-@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-    u ~ div .email-container {
-        min-width: 375px !important;
-    }
-}
-/* iPhone 6+, 7+, and 8+ */
-@media only screen and (min-device-width: 414px) {
-    u ~ div .email-container {
-        min-width: 414px !important;
-    }
-}
-
-
+<!doctype html>
+<html lang="und" dir="auto" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <title>Fitness — Insane Workout</title>
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      #outlook a { padding:0; }
+      body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
+      table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }
+      img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; }
+      p { display:block;margin:13px 0; }
     </style>
-
-    <!-- CSS Reset : END -->
-
-    <!-- Progressive Enhancements : BEGIN -->
-    <style>
-
-	    .primary{
-	background: #dd0a35;
-}
-.bg_white{
-	background: #ffffff;
-}
-.bg_light{
-	background: #fafafa;
-}
-.bg_black{
-	background: #000000;
-}
-.bg_dark{
-	background: rgba(0,0,0,.8);
-}
-.email-section{
-	padding:2.5em;
-}
-
-/*BUTTON*/
-.btn{
-	padding: 5px 15px;
-	display: inline-block;
-}
-.btn.btn-primary{
-	border-radius: 30px;
-	background: #dd0a35;
-	color: #ffffff;
-}
-.btn.btn-white{
-	border-radius: 30px;
-	background: #ffffff;
-	color: #000000;
-}
-.btn.btn-white-outline{
-	border-radius: 30px;
-	background: transparent;
-	border: 1px solid #fff;
-	color: #fff;
-}
-
-h1,h2,h3,h4,h5,h6{
-	font-family: 'Work Sans', sans-serif;
-	margin-top: 0;
-	font-weight: normal;
-	color: rgba(255,255,255,.9);
-}
-
-body{
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 1.8;
-	color: rgba(255,255,255,.5);
-}
-
-a{
-	color: #dd0a35;
-}
-
-table{
-}
-/*LOGO*/
-
-.logo{
-	margin: 0;
-	display: inline-block;
-	position: absolute;
-	top: 10px;
-	left: 0;
-	right: 0;
-	margin-bottom: 0;
-}
-
-.logo a{
-	color: #fff;
-	font-size: 24px;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-family: 'Work Sans', sans-serif;
-	display: inline-block;
-	border: 2px solid #fff;
-	line-height: 1.3;
-	padding: 10px 15px 4px 15px;
-	margin: 0;
-}
-.logo h1 a span{
-	line-height: 1;
-}
-
-.navigation{
-	padding: 0;
-}
-.navigation li{
-	list-style: none;
-	display: inline-block;;
-	margin-left: 5px;
-	font-size: 13px;
-	font-weight: 500;
-}
-.navigation li a{
-	color: rgba(0,0,0,.4);
-}
-
-/*HERO*/
-.hero{
-	position: relative;
-	z-index: 0;
-}
-
-.hero .overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	content: '';
-	width: 100%;
-	background: #000;
-	z-index: -1;
-	opacity: .3;
-}
-
-.hero .text{
-	color: rgba(255,255,255,.9);
-}
-.hero .text h2{
-	color: #fff;
-	font-size: 40px;
-	margin-bottom: 20px;
-	font-weight: 300;
-	line-height: 1.3;
-	/*text-transform: uppercase;*/
-}
-.hero .text .icon{
-	position: absolute;
-	bottom: -30px;
-	left: 0;
-	right: 0;
-}
-
-
-/*HEADING SECTION*/
-.heading-section{
-}
-.heading-section h2{
-	color: rgba(255,255,255,.9);
-	font-size: 28px;
-	margin-top: 0;
-	line-height: 1.4;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-.heading-section .subheading{
-	margin-bottom: 20px !important;
-	display: inline-block;
-	font-size: 13px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	color: rgba(255,255,255,.4);
-	position: relative;
-}
-.heading-section .subheading::after{
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: -5px;
-	content: '';
-	width: 100%;
-	height: 2px;
-	background: #dd0a35;
-	margin: 0 auto;
-}
-.heading-section .subheading::before{
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: -10px;
-	content: '';
-	width: 70%;
-	height: 2px;
-	background: #dd0a35;
-	margin: 0 auto;
-}
-
-.heading-section-white{
-	color: rgba(255,255,255,.8);
-}
-.heading-section-white h2{
-	font-family: 
-	line-height: 1;
-	padding-bottom: 0;
-}
-.heading-section-white h2{
-	color: #ffffff;
-}
-.heading-section-white .subheading{
-	margin-bottom: 0;
-	display: inline-block;
-	font-size: 13px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	color: rgba(255,255,255,.4);
-}
-
-
-/*TRAINER*/
-.trainer{
-
-}
-.trainer h2{
-	margin-bottom: 5px;
-}
-.trainer span{
-	text-transform: uppercase;
-	color: rgba(255,255,255,.2);
-}
-
-/*PROGRAM*/
-.text-program .price{
-	font-size: 20px;
-	margin-bottom: 0;
-	color: #dd0a35;
-}
-.text-program h2{
-	font-size: 18px;
-	margin-bottom: 10px;
-	font-weight: 500;
-}
-.text-program p{
-	margin-top: 0;
-}
-
-/*FOOTER*/
-
-.footer{
-	color: rgba(255,255,255,.5);
-
-}
-.footer .heading{
-	color: #ffffff;
-	font-size: 20px;
-}
-.footer ul{
-	margin: 0;
-	padding: 0;
-}
-.footer ul li{
-	list-style: none;
-	margin-bottom: 10px;
-}
-.footer ul li a{
-	color: rgba(255,255,255,1);
-}
-
-
-@media screen and (max-width: 500px) {
-
-
-}
-
-
+    <!--[if mso]>
+    <noscript>
+    <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]-->
+    <!--[if lte mso 11]>
+    <style type="text/css">
+      .mj-outlook-group-fix { width:100% !important; }
     </style>
+    <![endif]-->
+    
+      <!--[if !mso]><!-->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          @import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700);
+        </style>
+      <!--<![endif]-->
 
+    
+    
+    <style type="text/css">
+      @media only screen and (min-width:480px) {
+        .mj-column-per-100 { width:100% !important; max-width: 100%; }
+.mj-column-per-50 { width:50% !important; max-width: 50%; }
+.mj-column-per-60 { width:60% !important; max-width: 60%; }
+.mj-column-per-40 { width:40% !important; max-width: 40%; }
+      }
+    </style>
+    <style media="screen and (min-width:480px)">
+      .moz-text-html .mj-column-per-100 { width:100% !important; max-width: 100%; }
+.moz-text-html .mj-column-per-50 { width:50% !important; max-width: 50%; }
+.moz-text-html .mj-column-per-60 { width:60% !important; max-width: 60%; }
+.moz-text-html .mj-column-per-40 { width:40% !important; max-width: 40%; }
+    </style>
+    
+    
+  
+    
+    <style type="text/css">
 
-</head>
-
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
-	<center style="width: 100%; background-color: #f1f1f1;">
-    <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    @media only screen and (max-width:479px) {
+      table.mj-full-width-mobile { width: 100% !important; }
+      td.mj-full-width-mobile { width: auto !important; }
+    }
+  
+    </style>
+     
+    <style type="text/css">
+.sub-underline { display:inline-block; padding-bottom:8px; border-bottom:2px solid #dd0a35; }
+      a { color: #dd0a35; }
+      .trainer-role { display:block; font-size:13px; text-transform:uppercase; letter-spacing:1px; color:#7a7a7a; margin-bottom:8px; }
+      .price { display:block; color:#dd0a35; font-size:20px; font-weight:500; margin-bottom:4px; }
+    </style>
+    
+  </head>
+  
+      <body  style="word-spacing:normal;background-color:#222222;">
+        
+    <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Get fit with our insane workout plans, cardio and body form programs.</div>
+  
+        <div
+           aria-label="Fitness — Insane Workout" aria-roledescription="email" role="article" lang="und" dir="auto" style="word-spacing:normal;background-color:#222222;"
+        >
+        
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0;font-size:0;mso-line-height-rule:exactly;"><v:image style="border:0;mso-position-horizontal:center;position:absolute;top:0;width:600px;z-index:-3;" src="images/bg_1.jpg" xmlns:v="urn:schemas-microsoft-com:vml" /><![endif]-->
+      <div
+         style="margin:0 auto;max-width:600px;"
+      >
+        <table
+           border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
+          <tbody>
+            <tr
+               style="vertical-align:top;"
+            >
+              
+          <td
+             background="images/bg_1.jpg" style="background:#222222 url('images/bg_1.jpg') no-repeat center center / cover;background-position:center center;background-repeat:no-repeat;padding:60px 24px;vertical-align:top;height:280px;" height="280"
+          >
+            
+      <!--[if mso | IE]><table border="0" cellpadding="0" cellspacing="0" style="width:552px;" width="552" ><tr><td style=""><![endif]-->
+      <div
+         class="mj-hero-content" style="margin:0px auto;"
+      >
+        <table
+           border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;"
+        >
+          <tbody>
+            <tr>
+              <td  style="" >
+                <table
+                   border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;margin:0px;"
+                >
+                  <tbody>
+                    
+                        <tr>
+                          <td
+                             align="center" style="font-size:0px;padding:0 0 14px 0;word-break:break-word;"
+                          >
+                            
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:38px;font-weight:300;line-height:1.3;text-align:center;color:#ffffff;"
+      >Insane Workout<br />To Get Rid</div>
+    
+                          </td>
+                        </tr>
+                      
+                        <tr>
+                          <td
+                             align="center" style="font-size:0px;padding:10px 0 0 0;word-break:break-word;"
+                          >
+                            
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:60px;">
+              
+        <a
+           href="#" target="_blank"
+        >
+          
+      <img
+         alt="Play" src="images/002-play-button.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="60" height="auto"
+      />
+    
+        </a>
+      
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                          </td>
+                        </tr>
+                      
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+          </td>
+        
+            </tr>
+          </tbody>
+      </table>
     </div>
-    <div style="max-width: 600px; margin: 0 auto;" class="email-container">
-    	<!-- BEGIN BODY -->
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-	      <tr>
-          <td valign="middle" class="hero bg_white" style="background-image: url(images/bg_1.jpg); background-size: cover; height: 400px;">
-          	<div class="overlay"></div>
-            <table>
-            	<tr>
-            		<td>
-            			<div class="text" style="padding: 0 4em; text-align: center;">
-            				<h2>Insane Workout <br>To Get Rid</h2>
-            				<div class="icon">
-			        				<a href="#">
-			                  <img src="images/002-play-button.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-			                </a>
-			              </div>
-            			</div>
-            		</td>
-            	</tr>
-            </table>
-          </td>
-	      </tr><!-- end tr -->
-	      <tr>
-          <td class="bg_black email-section" style="text-align:center; padding-top: 5em;">
-          	<div class="heading-section heading-section-white">
-          		<span class="subheading">Welcome</span>
-            	<h2>Welcome To RestoBar</h2>
-            	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-          	</div>
-          </td>
-        </tr><!-- end: tr -->
-        <tr>
-          <td class="bg_dark" style="width: 100%;">
-          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-          		<tr>
-          			<td valign="middle" width="50%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td>
-                        <img src="images/bg_2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="middle" width="50%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td class="trainer" style="text-align: left; padding:25px;">
-				              	<h2>Kris Stanner</h2>
-				              	<span>Gym Trainer</span>
-				              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-				              	<p><a href="#" class="btn btn-primary">Read more</a></p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-          	</table>
-          </td>
-        </tr><!-- end: tr -->
-        <tr>
-          <td class="bg_black" style="text-align:center; padding: 2.5em 0 0 0;">
-          	<div class="heading-section heading-section-white">
-          		<span class="subheading">Gallery</span>
-            	<h2>gallery</h2>
-          	</div>
-          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-          		<tr>
-                <td width="50%">
-                  <div class="project-entry">
-                  	<img src="images/work-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                  </div>
-                </td>
-                <td width="50%">
-                  <div class="project-entry">
-                  	<img src="images/work-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                  </div>
-                </td>
-              </tr>
-          	</table>
-          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-          		<tr>
-                <td width="50%">
-                  <div class="project-entry">
-                  	<img src="images/work-3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                  </div>
-                </td>
-                <td width="50%">
-                  <div class="project-entry">
-                  	<img src="images/work-4.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                  </div>
-                </td>
-              </tr>
-          	</table>
-          </td>
-        </tr><!-- end: tr -->
-	      <tr>
-	        <td class="bg_dark email-section">
-	        	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-	        		<span class="subheading">Program</span>
-	          	<h2>Fitness Program</h2>
-	        	</div>
-	        	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-	        		<tr>
-          			<td style="padding-bottom: 30px;">
-          				<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-          					<td valign="middle" width="50%">
-		                  <img src="images/work-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-		                </td>
-		                <td valign="middle" width="50%">
-		                  <div class="text-program" style="text-align: left; padding-left:25px;">
-		                  	<span class="price">$98<small>/mos</small></span>
-				              	<h2>Cardio Program</h2>
-				              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-				              	<p><a href="#" class="btn btn-primary">Read more</a></p>
-		                  </div>
-		                </td>
-          				</table>
-          			</td>
-              </tr>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#000000" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#000000;background-color:#000000;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000000;background-color:#000000;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:50px 30px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
               <tr>
-          			<td style="padding-bottom: 30px;">
-          				<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-          					<td valign="middle" width="50%">
-		                  <img src="images/work-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-		                </td>
-		                <td valign="middle" width="50%">
-		                  <div class="text-program" style="text-align: left; padding-left:25px;">
-		                  	<p class="meta"><span>Posted on Feb 18, 2019</span> <span>Food</span></p>
-				              	<h2>Body Form Program</h2>
-				              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-				              	<p><a href="#" class="btn btn-primary">Read more</a></p>
-		                  </div>
-		                </td>
-          				</table>
-          			</td>
-              </tr>
-          	</table>
-          </td>
-        </tr> --><!-- end: tr -->
-      <!-- 1 Column Text + Button : END -->
-      </table>
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-        <tr>
-        	<td valign="middle" class="bg_black footer email-section">
-        		<table>
-            	<tr>
-                <td valign="top" width="33.333%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-right: 10px;">
-                      	<p>&copy; 2018 Stories. All Rights Reserved</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="top" width="33.333%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: right; padding-left: 5px; padding-right: 5px;">
-                      	<p><a href="#" style="color: rgba(255,255,255,.4);">Unsubcribe</a></p>
-                      </td>
-                    </tr>
-                  </table>
+                <td
+                   align="center" style="font-size:0px;padding:0 0 18px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:13px;letter-spacing:2px;line-height:1;text-align:center;text-transform:uppercase;color:#7a7a7a;"
+      ><span class="sub-underline">Welcome</span></div>
+    
                 </td>
               </tr>
-            </table>
-        	</td>
-        </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0 0 14px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:28px;font-weight:400;letter-spacing:1px;line-height:1.3;text-align:center;text-transform:uppercase;color:#ffffff;"
+      >Welcome To RestoBar</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:15px;line-height:1;text-align:center;color:#a0a0a0;"
+      >A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
       </table>
-
-    </div>
-  </center>
-</body>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#1a1a1a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#1a1a1a;background-color:#1a1a1a;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#1a1a1a;background-color:#1a1a1a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:300px;">
+              
+      <img
+         alt="Kris Stanner" src="images/bg_2.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td><td class="" style="vertical-align:middle;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:30px 30px 0 30px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:22px;font-weight:500;line-height:1.3;text-align:left;color:#ffffff;"
+      >Kris Stanner</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 30px 8px 30px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:15px;line-height:1;text-align:left;color:#d9d9d9;"
+      ><span class="trainer-role">Gym Trainer</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 30px 14px 30px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:15px;line-height:1;text-align:left;color:#a0a0a0;"
+      >A small river named Duden flows by their place and supplies it with the necessary regelialia.</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 30px 30px 30px;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;"
+      >
+        <tbody>
+          <tr>
+            <td
+               align="center" bgcolor="#dd0a35" role="presentation" style="border:none;border-radius:30px;cursor:auto;mso-padding-alt:10px 25px;background:#dd0a35;" valign="middle"
+            >
+              <a
+                 href="#" style="display:inline-block;background:#dd0a35;color:#ffffff;font-family:Work Sans, Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:30px;" target="_blank"
+              >
+                Read more
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#000000" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#000000;background-color:#000000;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000000;background-color:#000000;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:50px 30px 20px 30px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0 0 18px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:13px;letter-spacing:2px;line-height:1;text-align:center;text-transform:uppercase;color:#7a7a7a;"
+      ><span class="sub-underline">Gallery</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:28px;font-weight:400;letter-spacing:1px;line-height:1.3;text-align:center;text-transform:uppercase;color:#ffffff;"
+      >Gallery</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#000000" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#000000;background-color:#000000;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000000;background-color:#000000;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:300px;">
+              
+      <img
+         alt="" src="images/work-1.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:300px;">
+              
+      <img
+         alt="" src="images/work-2.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#000000" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#000000;background-color:#000000;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000000;background-color:#000000;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:0 0 40px 0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:300px;">
+              
+      <img
+         alt="" src="images/work-3.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:300px;">
+              
+      <img
+         alt="" src="images/work-4.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#1a1a1a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#1a1a1a;background-color:#1a1a1a;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#1a1a1a;background-color:#1a1a1a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:50px 30px 20px 30px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0 0 18px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:13px;letter-spacing:2px;line-height:1;text-align:center;text-transform:uppercase;color:#7a7a7a;"
+      ><span class="sub-underline">Program</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:28px;font-weight:400;letter-spacing:1px;line-height:1.3;text-align:center;text-transform:uppercase;color:#ffffff;"
+      >Fitness Program</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#1a1a1a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#1a1a1a;background-color:#1a1a1a;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#1a1a1a;background-color:#1a1a1a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:0 0 30px 0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:300px;">
+              
+      <img
+         alt="Cardio Program" src="images/work-1.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td><td class="" style="vertical-align:middle;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:20px 30px 0 30px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:15px;line-height:1;text-align:left;color:#d9d9d9;"
+      ><span class="price">$98<small>/mos</small></span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 30px 6px 30px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:22px;font-weight:500;line-height:1.3;text-align:left;color:#ffffff;"
+      >Cardio Program</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 30px 14px 30px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:15px;line-height:1;text-align:left;color:#a0a0a0;"
+      >A small river named Duden flows by their place and supplies it with the necessary regelialia.</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 30px 20px 30px;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;"
+      >
+        <tbody>
+          <tr>
+            <td
+               align="center" bgcolor="#dd0a35" role="presentation" style="border:none;border-radius:30px;cursor:auto;mso-padding-alt:10px 25px;background:#dd0a35;" valign="middle"
+            >
+              <a
+                 href="#" style="display:inline-block;background:#dd0a35;color:#ffffff;font-family:Work Sans, Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:30px;" target="_blank"
+              >
+                Read more
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#1a1a1a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#1a1a1a;background-color:#1a1a1a;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#1a1a1a;background-color:#1a1a1a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:0 0 40px 0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:300px;">
+              
+      <img
+         alt="Body Form Program" src="images/work-2.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td><td class="" style="vertical-align:middle;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:20px 30px 0 30px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:15px;line-height:1;text-align:left;color:#d9d9d9;"
+      ><span class="price">$98<small>/mos</small></span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 30px 6px 30px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:22px;font-weight:500;line-height:1.3;text-align:left;color:#ffffff;"
+      >Body Form Program</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 30px 14px 30px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:15px;line-height:1;text-align:left;color:#a0a0a0;"
+      >A small river named Duden flows by their place and supplies it with the necessary regelialia.</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 30px 20px 30px;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;"
+      >
+        <tbody>
+          <tr>
+            <td
+               align="center" bgcolor="#dd0a35" role="presentation" style="border:none;border-radius:30px;cursor:auto;mso-padding-alt:10px 25px;background:#dd0a35;" valign="middle"
+            >
+              <a
+                 href="#" style="display:inline-block;background:#dd0a35;color:#ffffff;font-family:Work Sans, Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:30px;" target="_blank"
+              >
+                Read more
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#000000" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#000000;background-color:#000000;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000000;background-color:#000000;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:30px 30px 20px 30px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:540px;" width="540" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="margin:0px auto;max-width:540px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:324px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-60 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#808080;"
+      >&copy; 2026 Fitness. All rights reserved.</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:216px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-40 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="right" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Work Sans, Arial, sans-serif;font-size:13px;line-height:1;text-align:right;color:#808080;"
+      ><a href="#" style="color:#808080;text-decoration:underline;">Unsubscribe</a></div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    
+      </div>
+      </body>
+    
 </html>
+  
