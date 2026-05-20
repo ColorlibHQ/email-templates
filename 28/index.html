@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="und" dir="auto" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <title>Pulse — Issue 18</title>
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      #outlook a { padding:0; }
+      body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
+      table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }
+      img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; }
+      p { display:block;margin:13px 0; }
+    </style>
+    <!--[if mso]>
+    <noscript>
+    <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]-->
+    <!--[if lte mso 11]>
+    <style type="text/css">
+      .mj-outlook-group-fix { width:100% !important; }
+    </style>
+    <![endif]-->
+    
+      <!--[if !mso]><!-->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap);
+        </style>
+      <!--<![endif]-->
+
+    
+    
+    <style type="text/css">
+      @media only screen and (min-width:480px) {
+        .mj-column-per-50 { width:50% !important; max-width: 50%; }
+.mj-column-per-100 { width:100% !important; max-width: 100%; }
+      }
+    </style>
+    <style media="screen and (min-width:480px)">
+      .moz-text-html .mj-column-per-50 { width:50% !important; max-width: 50%; }
+.moz-text-html .mj-column-per-100 { width:100% !important; max-width: 100%; }
+    </style>
+    
+    
+  
+    
+     
+    <style type="text/css">
+a { color: #06b6d4; text-decoration: none; font-weight: 500; }
+      .mono { font-family:'JetBrains Mono', ui-monospace, Menlo, monospace; }
+      .glow-h1 { background: linear-gradient(120deg, #06b6d4 0%, #a78bfa 60%, #fafafa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: #fafafa; }
+      .pill { display:inline-block; padding:3px 10px; background:#1a1a1a; border:1px solid #2a2a2a; border-radius:999px; font-size:11px; color:#a3a3a3; font-family:'JetBrains Mono', ui-monospace, Menlo, monospace; letter-spacing:0.02em; }
+      .hit { padding: 12px 0; border-top: 1px solid #1a1a1a; }
+      .hit-tag { color:#06b6d4; font-family:'JetBrains Mono', ui-monospace, Menlo, monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.1em; }
+    </style>
+    
+  </head>
+  
+      <body  style="word-spacing:normal;background-color:#0a0a0a;">
+        
+    <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">The week in software: Rust in the kernel, the open-source AI scaling laws, and why Postgres won.</div>
+  
+        <div
+           aria-label="Pulse — Issue 18" aria-roledescription="email" role="article" lang="und" dir="auto" style="word-spacing:normal;background-color:#0a0a0a;"
+        >
+        
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0a0a0a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0a0a0a;background-color:#0a0a0a;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0a0a0a;background-color:#0a0a0a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:40px 48px 0 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:272px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.02em;line-height:1.7;text-align:left;color:#fafafa;"
+      ><a href="#" style="color:#fafafa;">Pulse<span style="color:#06b6d4;">.</span></a></div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td><td class="" style="vertical-align:middle;width:272px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="right" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:right;color:#a3a3a3;"
+      ><span class="pill">issue 018 · mar 14</span></div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0a0a0a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0a0a0a;background-color:#0a0a0a;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0a0a0a;background-color:#0a0a0a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:32px 48px 0 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:544px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <p
+         style="border-top:solid 1px #06b6d4;font-size:1px;margin:0px;width:60px;"
+      >
+      </p>
+      
+      <!--[if mso | IE]><table align="left" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #06b6d4;font-size:1px;margin:0px;width:60px;" role="presentation" width="60px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+</td></tr></table><![endif]-->
+    
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0a0a0a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0a0a0a;background-color:#0a0a0a;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0a0a0a;background-color:#0a0a0a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 48px 0 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:544px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 14px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:12px;font-weight:600;letter-spacing:0.16em;line-height:1.7;text-align:left;text-transform:uppercase;color:#06b6d4;"
+      >This week</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 18px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><span class="glow-h1" style="font-size:38px;line-height:1.1;font-weight:800;letter-spacing:-0.025em;">Three things that changed how I'll write code next month.</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:16px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      >Rust shipped into the Linux kernel networking path. The first open-weight model crossed 4o on real evals. And Postgres quietly added a feature that makes half my Redis stack unnecessary.</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0a0a0a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0a0a0a;background-color:#0a0a0a;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0a0a0a;background-color:#0a0a0a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:28px 48px 8px 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:544px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+                >
+                  
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;"
+      >
+        <tbody>
+          <tr>
+            <td
+               align="center" bgcolor="#06b6d4" role="presentation" style="border:none;border-radius:6px;cursor:auto;mso-padding-alt:12px 26px;background:#06b6d4;" valign="middle"
+            >
+              <a
+                 href="#" style="display:inline-block;background:#06b6d4;color:#0a0a0a;font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:14px;font-weight:700;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:12px 26px;mso-padding-alt:0px;border-radius:6px;" target="_blank"
+              >
+                Read the issue
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0a0a0a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0a0a0a;background-color:#0a0a0a;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0a0a0a;background-color:#0a0a0a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:48px 48px 0 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:544px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <p
+         style="border-top:solid 1px #1a1a1a;font-size:1px;margin:0px auto;width:100%;"
+      >
+      </p>
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #1a1a1a;font-size:1px;margin:0px auto;width:544px;" role="presentation" width="544px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+</td></tr></table><![endif]-->
+    
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0a0a0a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0a0a0a;background-color:#0a0a0a;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0a0a0a;background-color:#0a0a0a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:36px 48px 16px 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:544px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 22px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:12px;font-weight:600;letter-spacing:0.16em;line-height:1.7;text-align:left;text-transform:uppercase;color:#06b6d4;"
+      >Three stories</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 6px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><span class="mono" style="color:#06b6d4;font-size:13px;">01 · systems</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 6px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.01em;line-height:1.25;text-align:left;color:#fafafa;"
+      ><a href="#" style="color:#fafafa;">Rust in the Linux kernel networking path</a></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 4px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:14px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      >It took five years of patches, three rewrites, and one Linus-approved memory-safety argument. Here's what actually went in, and what comes next.</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 28px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:13px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><span class="mono" style="color:#737373;">LWN · 11 min</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 6px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><span class="mono" style="color:#06b6d4;font-size:13px;">02 · ai</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 6px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.01em;line-height:1.25;text-align:left;color:#fafafa;"
+      ><a href="#" style="color:#fafafa;">The first open-weight model that beats GPT-4o on real tasks</a></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 4px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:14px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      >Not on benchmarks — on the messy, multi-step agentic evals that actually predict whether it'll work in production. The scaling laws still hold, but the open models caught up faster than anyone expected.</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 28px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:13px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><span class="mono" style="color:#737373;">Simon Willison · 8 min</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 6px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><span class="mono" style="color:#06b6d4;font-size:13px;">03 · databases</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 6px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.01em;line-height:1.25;text-align:left;color:#fafafa;"
+      ><a href="#" style="color:#fafafa;">Why Postgres won (and what's next)</a></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 4px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:14px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      >Pub/sub, vectors, JSON, time-series. Postgres now does all four well enough that the "polyglot persistence" story most of us were sold a decade ago looks like overkill. A retrospective.</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 16px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:13px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><span class="mono" style="color:#737373;">Crunchy Data blog · 14 min</span></div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0a0a0a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0a0a0a;background-color:#0a0a0a;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0a0a0a;background-color:#0a0a0a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:24px 48px 0 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:544px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <p
+         style="border-top:solid 1px #1a1a1a;font-size:1px;margin:0px auto;width:100%;"
+      >
+      </p>
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #1a1a1a;font-size:1px;margin:0px auto;width:544px;" role="presentation" width="544px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+</td></tr></table><![endif]-->
+    
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0a0a0a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0a0a0a;background-color:#0a0a0a;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0a0a0a;background-color:#0a0a0a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:32px 48px 16px 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:544px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 22px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:12px;font-weight:600;letter-spacing:0.16em;line-height:1.7;text-align:left;text-transform:uppercase;color:#06b6d4;"
+      >Quick hits</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" class="hit" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr><td><span class="hit-tag">tool</span><br/><a href="#" style="color:#fafafa;font-weight:500;">Codename Goose</a> <span style="color:#737373;font-size:14px;">— Block's open-source AI agent for the terminal. MIT licensed.</span></td></tr>
+          </table></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" class="hit" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr><td><span class="hit-tag">release</span><br/><a href="#" style="color:#fafafa;font-weight:500;">Bun 1.2</a> <span style="color:#737373;font-size:14px;">— now ships a built-in S3 client, native HTMX support, and 30% faster cold start.</span></td></tr>
+          </table></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" class="hit" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr><td><span class="hit-tag">deep dive</span><br/><a href="#" style="color:#fafafa;font-weight:500;">How Cursor's index works</a> <span style="color:#737373;font-size:14px;">— the engineering blog finally explained the embedding pipeline.</span></td></tr>
+          </table></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" class="hit" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr><td><span class="hit-tag">funny</span><br/><a href="#" style="color:#fafafa;font-weight:500;">"My team uses kanban"</a> <span style="color:#737373;font-size:14px;">— a single-page interactive that's gone around every product Slack this week.</span></td></tr>
+          </table></div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0d1117" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0d1117;background-color:#0d1117;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0d1117;background-color:#0d1117;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="border-left:3px solid #06b6d4;direction:ltr;font-size:0px;padding:32px 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:541px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 4px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      ><span class="mono" style="color:#737373;font-size:11px;text-transform:uppercase;letter-spacing:0.14em;">// sponsored</span></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0 0 6px 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:17px;font-weight:700;letter-spacing:-0.01em;line-height:1.25;text-align:left;color:#fafafa;"
+      ><a href="#" style="color:#fafafa;">Want to stop writing Dockerfiles?</a></div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:14px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      >Railway builds, deploys, and observes your code straight from your repo. No YAML. <a href="#">Try it free →</a></div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0a0a0a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0a0a0a;background-color:#0a0a0a;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0a0a0a;background-color:#0a0a0a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:48px 48px 16px 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:544px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="center" style="font-size:0px;padding:0 0 28px 0;word-break:break-word;"
+                >
+                  
+      <p
+         style="border-top:solid 1px #1a1a1a;font-size:1px;margin:0px auto;width:100%;"
+      >
+      </p>
+      
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #1a1a1a;font-size:1px;margin:0px auto;width:544px;" role="presentation" width="544px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+</td></tr></table><![endif]-->
+    
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;line-height:1.7;text-align:left;color:#a3a3a3;"
+      >That's it for this week. Forward to a friend who'd like it, or reply with what you're reading — I read everything.</div>
+    
+                </td>
+              </tr>
+            
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:14px 0 0 0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:15px;font-weight:600;line-height:1.7;text-align:left;color:#fafafa;"
+      >— Alex</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:640px;" width="640" bgcolor="#0a0a0a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  style="background:#0a0a0a;background-color:#0a0a0a;margin:0px auto;max-width:640px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0a0a0a;background-color:#0a0a0a;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:32px 48px 40px 48px;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:544px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   align="left" style="font-size:0px;padding:0;word-break:break-word;"
+                >
+                  
+      <div
+         style="font-family:Inter, -apple-system, BlinkMacSystemFont, sans-serif;font-size:12px;line-height:1.6;text-align:left;color:#525252;"
+      >Pulse · A weekly newsletter about the software industry, by Alex Kim.<br/>
+          <a href="#" style="color:#525252;text-decoration:underline;">Manage subscription</a>  ·  <a href="#" style="color:#525252;text-decoration:underline;">Unsubscribe</a>  ·  <a href="#" style="color:#525252;text-decoration:underline;">Read on the web</a></div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><![endif]-->
+    
+    
+      </div>
+      </body>
+    
+</html>
+  

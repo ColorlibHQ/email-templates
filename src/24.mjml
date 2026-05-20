@@ -1,0 +1,149 @@
+<mjml>
+  <mj-head>
+    <mj-title>Brief — Issue 42</mj-title>
+    <mj-preview>The unbundling of the design tool. Plus: three reads, one tool, one quote.</mj-preview>
+
+    <mj-font name="Newsreader" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,700&amp;display=swap" />
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text color="#2a2a2a" font-size="16px" line-height="1.7" />
+      <mj-button background-color="#0a0a0a" color="#ffffff" border-radius="0" inner-padding="11px 22px" font-weight="600" font-size="13px" />
+      <mj-class name="serif" font-family="Newsreader, Georgia, serif" />
+      <mj-class name="kicker" font-size="12px" text-transform="uppercase" letter-spacing="0.14em" color="#a3a3a3" font-weight="500" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #0a0a0a; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+      .h1 { font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1.1; font-weight: 700; color:#0a0a0a; letter-spacing:-0.01em; margin:0; }
+      .h2 { font-family: 'Newsreader', Georgia, serif; font-size: 24px; line-height: 1.2; font-weight: 700; color:#0a0a0a; letter-spacing:-0.005em; margin:0; }
+      .dropcap::first-letter { font-family: 'Newsreader', Georgia, serif; font-size: 54px; line-height: 0.9; float: left; padding: 6px 10px 0 0; font-weight: 700; color:#0a0a0a; }
+      .read-item { padding: 14px 0; border-top: 1px solid #ececec; }
+      .read-num { font-family: 'Newsreader', Georgia, serif; font-size: 26px; color:#a3a3a3; font-weight:400; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#fafaf7" width="640px">
+
+    <!-- Masthead -->
+    <mj-section background-color="#fafaf7" padding="40px 48px 8px 48px">
+      <mj-column width="60%" vertical-align="middle">
+        <mj-text mj-class="serif" font-weight="700" font-size="22px" color="#0a0a0a" letter-spacing="-0.01em" padding="0">
+          <a href="#" style="color:#0a0a0a;text-decoration:none;">Brief.</a>
+        </mj-text>
+      </mj-column>
+      <mj-column width="40%" vertical-align="middle">
+        <mj-text align="right" mj-class="kicker" padding="0">Issue 42 · March 14, 2026</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#fafaf7" padding="16px 48px">
+      <mj-column>
+        <mj-divider border-color="#0a0a0a" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Headline -->
+    <mj-section background-color="#fafaf7" padding="32px 48px 0 48px">
+      <mj-column>
+        <mj-text mj-class="kicker" padding="0 0 14px 0">The essay</mj-text>
+        <mj-text padding="0 0 8px 0"><span class="h1">The unbundling of the design tool</span></mj-text>
+        <mj-text color="#737373" font-size="14px" padding="0 0 28px 0">By <strong style="color:#0a0a0a;">Maya Chen</strong> · 7 min read</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Body -->
+    <mj-section background-color="#fafaf7" padding="0 48px">
+      <mj-column>
+        <mj-text font-size="17px" line-height="1.75" color="#2a2a2a" css-class="dropcap">For a decade, the design tool was a monolith. Figma sat at the center: vector editor, prototyping, comments, design systems, dev handoff, all in one canvas. The argument was always the same — collaboration only works when the surface is shared. And it worked. Until the AI moment shifted what "the surface" even means.</mj-text>
+        <mj-text padding="14px 0 0 0">What's happening now is not a competitor. It's an unbundling. The "draw a rectangle, add a component" parts are being subsumed into adjacent products: Cursor for UI scaffolds, Granola for meeting-to-mockup, Linear for spec-to-flow. None of them are design tools. All of them are reducing the surface area where a design tool was load-bearing.</mj-text>
+        <mj-text padding="14px 0 0 0">The interesting question isn't whether Figma loses. It's what the new shape of the design role is when half the artifacts you used to produce — the wireframe, the spec doc, the handoff file — get generated as a byproduct of someone else's workflow.</mj-text>
+        <mj-text padding="20px 0 0 0"><a href="#"><strong>Continue reading →</strong></a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#fafaf7" padding="40px 48px 0 48px">
+      <mj-column>
+        <mj-divider border-color="#ececec" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Three reads -->
+    <mj-section background-color="#fafaf7" padding="32px 48px 0 48px">
+      <mj-column>
+        <mj-text mj-class="kicker" padding="0 0 18px 0">Three worth your time</mj-text>
+
+        <mj-text padding="0">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr class="read-item" style="border-top:none;">
+              <td width="40" valign="top"><span class="read-num">01</span></td>
+              <td valign="top">
+                <a href="#"><strong style="font-size:16px;">Stripe's quiet shift to becoming an infrastructure company</strong></a><br/>
+                <span style="color:#737373;font-size:14px;">Stratechery · 12 min</span>
+              </td>
+            </tr>
+            <tr class="read-item">
+              <td width="40" valign="top"><span class="read-num">02</span></td>
+              <td valign="top">
+                <a href="#"><strong style="font-size:16px;">Why the post-Substack newsletter is bundled again</strong></a><br/>
+                <span style="color:#737373;font-size:14px;">Platformer · 8 min</span>
+              </td>
+            </tr>
+            <tr class="read-item">
+              <td width="40" valign="top"><span class="read-num">03</span></td>
+              <td valign="top">
+                <a href="#"><strong style="font-size:16px;">The compiler is the new framework</strong></a><br/>
+                <span style="color:#737373;font-size:14px;">Brian Lovin's blog · 6 min</span>
+              </td>
+            </tr>
+          </table>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Tool -->
+    <mj-section background-color="#fafaf7" padding="32px 48px 0 48px">
+      <mj-column>
+        <mj-divider border-color="#ececec" border-width="1px" padding="0 0 24px 0" />
+        <mj-text mj-class="kicker" padding="0 0 10px 0">One tool I'm using</mj-text>
+        <mj-text padding="0 0 8px 0"><span class="h2">Raycast Notes</span></mj-text>
+        <mj-text color="#525252" font-size="15px" padding="0 0 12px 0">I keep trying to replace Apple Notes. Raycast Notes is the first one that's stuck — it lives behind a global shortcut, doesn't ask me to organize anything, and syncs faster than I can context-switch.</mj-text>
+        <mj-text font-size="14px"><a href="#">raycast.com/notes</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Quote -->
+    <mj-section background-color="#fafaf7" padding="40px 48px 0 48px">
+      <mj-column>
+        <mj-divider border-color="#ececec" border-width="1px" padding="0 0 28px 0" />
+        <mj-text mj-class="serif" font-style="italic" font-size="22px" line-height="1.4" color="#0a0a0a" padding="0 0 12px 0">"The best way to predict the future is to invent it."</mj-text>
+        <mj-text color="#737373" font-size="14px" padding="0">— Alan Kay</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Sign-off -->
+    <mj-section background-color="#fafaf7" padding="40px 48px 40px 48px">
+      <mj-column>
+        <mj-divider border-color="#0a0a0a" border-width="1px" padding="0 0 28px 0" />
+        <mj-text color="#525252" font-size="15px" padding="0 0 8px 0">Thanks for reading. Forward to a friend who'd like it, or:</mj-text>
+        <mj-button href="#" align="left">Share this issue</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#fafaf7" padding="0 48px 48px 48px">
+      <mj-column>
+        <mj-text color="#a3a3a3" font-size="12px" line-height="1.6" padding="0">
+          Brief · A weekly newsletter on software, design, and tools, by Maya Chen.<br/>
+          <a href="#" style="color:#a3a3a3;">Manage subscription</a>  ·  <a href="#" style="color:#a3a3a3;">Unsubscribe</a>  ·  <a href="#" style="color:#a3a3a3;">View in browser</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

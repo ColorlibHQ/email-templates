@@ -1,0 +1,108 @@
+<mjml>
+  <mj-head>
+    <mj-title>It's been a minute — Verge</mj-title>
+    <mj-preview>We saved your size and 25% off. Plus a few things you might've missed.</mj-preview>
+
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text color="#404040" font-size="15px" line-height="1.65" />
+      <mj-button background-color="#0a0a0a" color="#ffffff" border-radius="6px" inner-padding="14px 32px" font-weight="600" font-size="15px" />
+      <mj-class name="h1" color="#0a0a0a" font-size="32px" line-height="1.15" font-weight="700" letter-spacing="-0.02em" padding="0 0 14px 0" />
+      <mj-class name="h2" color="#0a0a0a" font-size="20px" line-height="1.25" font-weight="700" letter-spacing="-0.01em" padding="0 0 8px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #c2410c; text-decoration: none; font-weight: 500; }
+      .hero-h1 { color:#ffffff; font-size:46px; line-height:1.05; font-weight:800; letter-spacing:-0.03em; margin:0; }
+      .hero-sub { color:#fed7aa; font-size:16px; font-weight:500; margin-top:14px; }
+      .offer-num { font-family: Inter, sans-serif; font-size:88px; line-height:0.9; font-weight:800; color:#c2410c; letter-spacing:-0.04em; }
+      .offer-pct { font-size:32px; color:#c2410c; font-weight:700; vertical-align: top; }
+      .code-box { display:inline-block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:18px; font-weight:700; letter-spacing:0.12em; color:#0a0a0a; background:#fff7ed; border:1px dashed #c2410c; padding:14px 22px; border-radius:6px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#fafaf7" width="640px">
+
+    <!-- Brand bar -->
+    <mj-section background-color="#fafaf7" padding="28px 48px 0 48px">
+      <mj-column>
+        <mj-text font-weight="800" font-size="18px" letter-spacing="0.1em" text-transform="uppercase" color="#0a0a0a" padding="0">
+          <a href="#" style="color:#0a0a0a;">Verge</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Big color hero -->
+    <mj-section background-color="#c2410c" padding="64px 48px 64px 48px">
+      <mj-column>
+        <mj-text padding="0"><span style="font-size:14px;color:#fed7aa;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;">A little something for you</span></mj-text>
+        <mj-text padding="14px 0 0 0"><span class="hero-h1">It's been a<br/>minute, Sam.</span></mj-text>
+        <mj-text padding="14px 0 0 0"><span class="hero-sub">We've kept your favorites on hand — and saved 25% off your next order while we were waiting.</span></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Offer block -->
+    <mj-section background-color="#ffffff" padding="56px 48px 16px 48px">
+      <mj-column>
+        <mj-text align="center" padding="0"><span class="offer-num">25<span class="offer-pct">%</span></span></mj-text>
+        <mj-text align="center" color="#0a0a0a" font-size="18px" font-weight="600" padding="14px 0 6px 0">off everything, no minimum</mj-text>
+        <mj-text align="center" color="#737373" font-size="14px" padding="0 0 24px 0">Expires Sunday at midnight PT. Good for one order, any size.</mj-text>
+        <mj-text align="center" padding="0 0 24px 0"><span class="code-box">COMEBACK25</span></mj-text>
+        <mj-button href="#" align="center">Shop with this offer</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="48px 48px 0 48px">
+      <mj-column>
+        <mj-divider border-color="#ececec" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- "Since you've been gone" -->
+    <mj-section background-color="#ffffff" padding="40px 48px 8px 48px">
+      <mj-column>
+        <mj-text font-size="12px" text-transform="uppercase" letter-spacing="0.14em" color="#c2410c" font-weight="600" padding="0 0 14px 0">Since you've been gone</mj-text>
+        <mj-text mj-class="h1" font-size="26px">A few things you might've missed.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="16px 48px 8px 48px">
+      <mj-column>
+        <mj-text mj-class="h2" font-size="17px" padding="0 0 4px 0">↗ New: relaxed-fit denim</mj-text>
+        <mj-text color="#525252" font-size="14px" padding="0 0 18px 0">A heavier weight, organic cotton, made in Portugal. Three washes.</mj-text>
+
+        <mj-text mj-class="h2" font-size="17px" padding="0 0 4px 0">✦ Restocked: the Field Jacket in olive</mj-text>
+        <mj-text color="#525252" font-size="14px" padding="0 0 18px 0">Last year's most-loved piece is back, in sizes XS through XXL.</mj-text>
+
+        <mj-text mj-class="h2" font-size="17px" padding="0 0 4px 0">★ Final markdowns on winter</mj-text>
+        <mj-text color="#525252" font-size="14px" padding="0 0 18px 0">Up to 60% off the last of the cold-weather collection. Sizes are limited.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Sign-off -->
+    <mj-section background-color="#ffffff" padding="32px 48px 48px 48px">
+      <mj-column>
+        <mj-divider border-color="#ececec" border-width="1px" padding="0 0 28px 0" />
+        <mj-text color="#525252" font-size="15px" line-height="1.7">Genuinely — if Verge isn't for you right now, we get it. You can <a href="#" style="color:#525252;text-decoration:underline;">slow down emails</a> to once a month, or <a href="#" style="color:#525252;text-decoration:underline;">unsubscribe</a> entirely. No hard feelings.</mj-text>
+        <mj-text color="#525252" font-size="15px" padding="14px 0 0 0">Either way: hope to see you again soon.</mj-text>
+        <mj-text color="#0a0a0a" font-size="15px" font-weight="600" padding="6px 0 0 0">— The Verge team</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#fafaf7" padding="32px 48px 40px 48px">
+      <mj-column>
+        <mj-text color="#a3a3a3" font-size="12px" line-height="1.6" padding="0">
+          Verge Apparel · 548 Market St #28475 · San Francisco, CA 94104<br/>
+          You're getting this because it's been a while since you shopped with us. <a href="#" style="color:#a3a3a3;text-decoration:underline;">Email preferences</a>  ·  <a href="#" style="color:#a3a3a3;text-decoration:underline;">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

@@ -1,0 +1,92 @@
+<mjml>
+  <mj-head>
+    <mj-title>Reset your password</mj-title>
+    <mj-preview>Someone requested a password reset for your account. This link expires in 1 hour.</mj-preview>
+
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text color="#404040" font-size="15px" line-height="1.65" />
+      <mj-button background-color="#0a0a0a" color="#ffffff" border-radius="6px" inner-padding="13px 28px" font-weight="600" font-size="14px" />
+      <mj-class name="h1" color="#0a0a0a" font-size="26px" line-height="1.2" font-weight="700" letter-spacing="-0.02em" padding="0 0 16px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #0a0a0a; text-decoration: underline; }
+      .raw-link { word-break: break-all; color:#737373; font-size:13px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+      .meta-row td { padding: 6px 0; font-size: 13px; color:#525252; vertical-align: top; }
+      .meta-row .k { color:#a3a3a3; width: 100px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#ffffff" width="600px">
+
+    <!-- Logo -->
+    <mj-section padding="40px 40px 20px 40px">
+      <mj-column>
+        <mj-text font-weight="700" font-size="16px" letter-spacing="0.04em" text-transform="uppercase" color="#0a0a0a" padding="0">
+          <a href="#" style="color:#0a0a0a;text-decoration:none;">Strata</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Headline -->
+    <mj-section padding="32px 40px 0 40px">
+      <mj-column>
+        <mj-text mj-class="h1">Reset your password</mj-text>
+        <mj-text>Someone — hopefully you — requested a password reset for the Strata account associated with <strong style="color:#0a0a0a;">sam@example.com</strong>. Click the button below to choose a new one.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section padding="20px 40px 16px 40px">
+      <mj-column>
+        <mj-button href="#" align="left">Reset password</mj-button>
+        <mj-text color="#737373" font-size="13px" padding="14px 0 0 0">This link expires in <strong style="color:#0a0a0a;">1 hour</strong>. If it expires, you can <a href="#">request a new one</a>.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Raw URL -->
+    <mj-section padding="20px 40px 0 40px">
+      <mj-column>
+        <mj-text color="#737373" font-size="13px" padding="0 0 6px 0">Or paste this link into your browser:</mj-text>
+        <mj-text css-class="raw-link" padding="0">https://strata.app/reset?token=8f3c2e9a4b7d6f1c5e8a3b9d2f7c4e1a&amp;uid=usr_01HZ4K9M2N</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section padding="32px 40px 0 40px">
+      <mj-column>
+        <mj-divider border-color="#f0f0f0" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Security info -->
+    <mj-section padding="24px 40px 0 40px">
+      <mj-column>
+        <mj-text color="#0a0a0a" font-weight="600" font-size="14px" padding="0 0 12px 0">Didn't request this?</mj-text>
+        <mj-text color="#525252" font-size="14px" padding="0 0 16px 0">You can safely ignore this email — your password won't change. For your records, here's where the request came from:</mj-text>
+        <mj-table cellpadding="0" cellspacing="0" css-class="meta-row">
+          <tr><td class="k">When</td><td>Mar 14, 2026 · 14:28 UTC</td></tr>
+          <tr><td class="k">From IP</td><td>198.51.100.42 · San Francisco, CA, US</td></tr>
+          <tr><td class="k">Device</td><td>Chrome 132 on macOS 15.3</td></tr>
+        </mj-table>
+        <mj-text color="#525252" font-size="14px" padding="16px 0 0 0">If you don't recognize this activity, <a href="#">secure your account</a> and consider enabling two-factor authentication.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section padding="40px 40px 40px 40px">
+      <mj-column>
+        <mj-text color="#a3a3a3" font-size="12px" line-height="1.6" padding="0">
+          Strata, Inc. · 548 Market St #28475 · San Francisco, CA 94104<br/>
+          You're receiving this because a password reset was requested for your account. We send security-related emails regardless of marketing preferences.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

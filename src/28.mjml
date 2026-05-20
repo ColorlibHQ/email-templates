@@ -1,0 +1,163 @@
+<mjml>
+  <mj-head>
+    <mj-title>Pulse — Issue 18</mj-title>
+    <mj-preview>The week in software: Rust in the kernel, the open-source AI scaling laws, and why Postgres won.</mj-preview>
+
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" />
+    <mj-font name="JetBrains Mono" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;display=swap" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text color="#a3a3a3" font-size="15px" line-height="1.7" />
+      <mj-button background-color="#06b6d4" color="#0a0a0a" border-radius="6px" inner-padding="12px 26px" font-weight="700" font-size="14px" />
+      <mj-class name="h1" color="#fafafa" font-size="34px" line-height="1.15" font-weight="700" letter-spacing="-0.02em" padding="0 0 14px 0" />
+      <mj-class name="h2" color="#fafafa" font-size="20px" line-height="1.25" font-weight="700" letter-spacing="-0.01em" padding="0 0 6px 0" />
+      <mj-class name="kicker" font-size="12px" text-transform="uppercase" letter-spacing="0.16em" color="#06b6d4" font-weight="600" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #06b6d4; text-decoration: none; font-weight: 500; }
+      .mono { font-family:'JetBrains Mono', ui-monospace, Menlo, monospace; }
+      .glow-h1 { background: linear-gradient(120deg, #06b6d4 0%, #a78bfa 60%, #fafafa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: #fafafa; }
+      .pill { display:inline-block; padding:3px 10px; background:#1a1a1a; border:1px solid #2a2a2a; border-radius:999px; font-size:11px; color:#a3a3a3; font-family:'JetBrains Mono', ui-monospace, Menlo, monospace; letter-spacing:0.02em; }
+      .hit { padding: 12px 0; border-top: 1px solid #1a1a1a; }
+      .hit-tag { color:#06b6d4; font-family:'JetBrains Mono', ui-monospace, Menlo, monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.1em; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#0a0a0a" width="640px">
+
+    <!-- Masthead -->
+    <mj-section background-color="#0a0a0a" padding="40px 48px 0 48px">
+      <mj-column width="50%" vertical-align="middle">
+        <mj-text font-weight="700" font-size="20px" letter-spacing="-0.02em" color="#fafafa" padding="0">
+          <a href="#" style="color:#fafafa;">Pulse<span style="color:#06b6d4;">.</span></a>
+        </mj-text>
+      </mj-column>
+      <mj-column width="50%" vertical-align="middle">
+        <mj-text align="right" padding="0"><span class="pill">issue 018 · mar 14</span></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Glow line -->
+    <mj-section background-color="#0a0a0a" padding="32px 48px 0 48px">
+      <mj-column>
+        <mj-divider border-color="#06b6d4" border-width="1px" padding="0" width="60px" align="left" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Headline -->
+    <mj-section background-color="#0a0a0a" padding="20px 48px 0 48px">
+      <mj-column>
+        <mj-text mj-class="kicker" padding="0 0 14px 0">This week</mj-text>
+        <mj-text padding="0 0 18px 0"><span class="glow-h1" style="font-size:38px;line-height:1.1;font-weight:800;letter-spacing:-0.025em;">Three things that changed how I'll write code next month.</span></mj-text>
+        <mj-text color="#a3a3a3" font-size="16px" line-height="1.7">Rust shipped into the Linux kernel networking path. The first open-weight model crossed 4o on real evals. And Postgres quietly added a feature that makes half my Redis stack unnecessary.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section background-color="#0a0a0a" padding="28px 48px 8px 48px">
+      <mj-column>
+        <mj-button href="#" align="left">Read the issue</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#0a0a0a" padding="48px 48px 0 48px">
+      <mj-column>
+        <mj-divider border-color="#1a1a1a" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Stories -->
+    <mj-section background-color="#0a0a0a" padding="36px 48px 16px 48px">
+      <mj-column>
+        <mj-text mj-class="kicker" padding="0 0 22px 0">Three stories</mj-text>
+
+        <mj-text padding="0 0 6px 0"><span class="mono" style="color:#06b6d4;font-size:13px;">01 · systems</span></mj-text>
+        <mj-text mj-class="h2"><a href="#" style="color:#fafafa;">Rust in the Linux kernel networking path</a></mj-text>
+        <mj-text color="#a3a3a3" font-size="14px" padding="0 0 4px 0">It took five years of patches, three rewrites, and one Linus-approved memory-safety argument. Here's what actually went in, and what comes next.</mj-text>
+        <mj-text font-size="13px" padding="0 0 28px 0"><span class="mono" style="color:#737373;">LWN · 11 min</span></mj-text>
+
+        <mj-text padding="0 0 6px 0"><span class="mono" style="color:#06b6d4;font-size:13px;">02 · ai</span></mj-text>
+        <mj-text mj-class="h2"><a href="#" style="color:#fafafa;">The first open-weight model that beats GPT-4o on real tasks</a></mj-text>
+        <mj-text color="#a3a3a3" font-size="14px" padding="0 0 4px 0">Not on benchmarks — on the messy, multi-step agentic evals that actually predict whether it'll work in production. The scaling laws still hold, but the open models caught up faster than anyone expected.</mj-text>
+        <mj-text font-size="13px" padding="0 0 28px 0"><span class="mono" style="color:#737373;">Simon Willison · 8 min</span></mj-text>
+
+        <mj-text padding="0 0 6px 0"><span class="mono" style="color:#06b6d4;font-size:13px;">03 · databases</span></mj-text>
+        <mj-text mj-class="h2"><a href="#" style="color:#fafafa;">Why Postgres won (and what's next)</a></mj-text>
+        <mj-text color="#a3a3a3" font-size="14px" padding="0 0 4px 0">Pub/sub, vectors, JSON, time-series. Postgres now does all four well enough that the "polyglot persistence" story most of us were sold a decade ago looks like overkill. A retrospective.</mj-text>
+        <mj-text font-size="13px" padding="0 0 16px 0"><span class="mono" style="color:#737373;">Crunchy Data blog · 14 min</span></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#0a0a0a" padding="24px 48px 0 48px">
+      <mj-column>
+        <mj-divider border-color="#1a1a1a" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Quick hits -->
+    <mj-section background-color="#0a0a0a" padding="32px 48px 16px 48px">
+      <mj-column>
+        <mj-text mj-class="kicker" padding="0 0 22px 0">Quick hits</mj-text>
+
+        <mj-text padding="0" css-class="hit">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr><td><span class="hit-tag">tool</span><br/><a href="#" style="color:#fafafa;font-weight:500;">Codename Goose</a> <span style="color:#737373;font-size:14px;">— Block's open-source AI agent for the terminal. MIT licensed.</span></td></tr>
+          </table>
+        </mj-text>
+
+        <mj-text padding="0" css-class="hit">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr><td><span class="hit-tag">release</span><br/><a href="#" style="color:#fafafa;font-weight:500;">Bun 1.2</a> <span style="color:#737373;font-size:14px;">— now ships a built-in S3 client, native HTMX support, and 30% faster cold start.</span></td></tr>
+          </table>
+        </mj-text>
+
+        <mj-text padding="0" css-class="hit">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr><td><span class="hit-tag">deep dive</span><br/><a href="#" style="color:#fafafa;font-weight:500;">How Cursor's index works</a> <span style="color:#737373;font-size:14px;">— the engineering blog finally explained the embedding pipeline.</span></td></tr>
+          </table>
+        </mj-text>
+
+        <mj-text padding="0" css-class="hit">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr><td><span class="hit-tag">funny</span><br/><a href="#" style="color:#fafafa;font-weight:500;">"My team uses kanban"</a> <span style="color:#737373;font-size:14px;">— a single-page interactive that's gone around every product Slack this week.</span></td></tr>
+          </table>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Sponsor block (subtle) -->
+    <mj-section background-color="#0d1117" padding="32px 48px" border-left="3px solid #06b6d4">
+      <mj-column>
+        <mj-text padding="0 0 4px 0"><span class="mono" style="color:#737373;font-size:11px;text-transform:uppercase;letter-spacing:0.14em;">// sponsored</span></mj-text>
+        <mj-text mj-class="h2" font-size="17px" padding="0 0 6px 0"><a href="#" style="color:#fafafa;">Want to stop writing Dockerfiles?</a></mj-text>
+        <mj-text color="#a3a3a3" font-size="14px" padding="0">Railway builds, deploys, and observes your code straight from your repo. No YAML. <a href="#">Try it free →</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Sign-off -->
+    <mj-section background-color="#0a0a0a" padding="48px 48px 16px 48px">
+      <mj-column>
+        <mj-divider border-color="#1a1a1a" border-width="1px" padding="0 0 28px 0" />
+        <mj-text color="#a3a3a3" font-size="15px" line-height="1.7">That's it for this week. Forward to a friend who'd like it, or reply with what you're reading — I read everything.</mj-text>
+        <mj-text padding="14px 0 0 0" color="#fafafa" font-size="15px" font-weight="600">— Alex</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#0a0a0a" padding="32px 48px 40px 48px">
+      <mj-column>
+        <mj-text color="#525252" font-size="12px" line-height="1.6" padding="0">
+          Pulse · A weekly newsletter about the software industry, by Alex Kim.<br/>
+          <a href="#" style="color:#525252;text-decoration:underline;">Manage subscription</a>  ·  <a href="#" style="color:#525252;text-decoration:underline;">Unsubscribe</a>  ·  <a href="#" style="color:#525252;text-decoration:underline;">Read on the web</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

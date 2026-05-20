@@ -1,0 +1,118 @@
+<mjml>
+  <mj-head>
+    <mj-title>Order receipt — Northbound</mj-title>
+    <mj-preview>Order #NB-10428 confirmed. Shipping to San Francisco, arriving Mar 18.</mj-preview>
+
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text color="#404040" font-size="15px" line-height="1.6" />
+      <mj-button background-color="#0a0a0a" color="#ffffff" border-radius="6px" inner-padding="11px 22px" font-weight="600" font-size="14px" />
+      <mj-class name="h1" color="#0a0a0a" font-size="24px" line-height="1.2" font-weight="700" letter-spacing="-0.02em" padding="0 0 6px 0" />
+      <mj-class name="muted" color="#737373" font-size="13px" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #0a0a0a; text-decoration: underline; }
+      .label { color:#737373; font-size:12px; text-transform:uppercase; letter-spacing:0.06em; }
+      .item-row td { border-bottom: 1px solid #f0f0f0; padding-top:14px; padding-bottom:14px; vertical-align: top; }
+      .totals td { padding-top:6px; padding-bottom:6px; font-size:14px; }
+      .totals .grand td { padding-top:14px; border-top: 1px solid #0a0a0a; font-size:16px; font-weight:700; color:#0a0a0a; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#ffffff" width="600px">
+
+    <!-- Logo -->
+    <mj-section padding="40px 40px 24px 40px">
+      <mj-column>
+        <mj-text font-weight="700" font-size="16px" letter-spacing="0.04em" text-transform="uppercase" color="#0a0a0a" padding="0">
+          <a href="#" style="color:#0a0a0a;text-decoration:none;">Northbound</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Heading -->
+    <mj-section padding="20px 40px 8px 40px">
+      <mj-column>
+        <mj-text mj-class="h1">Thanks, Sam. Your order is confirmed.</mj-text>
+        <mj-text color="#525252" padding="0 0 24px 0">Order <strong style="color:#0a0a0a;">#NB-10428</strong> · placed Mar 14, 2026</mj-text>
+        <mj-button href="#" align="left">Track your order</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Items table -->
+    <mj-section padding="32px 40px 0 40px">
+      <mj-column>
+        <mj-text padding="0 0 8px 0" css-class="label">Items</mj-text>
+        <mj-table cellpadding="0" cellspacing="0">
+          <tr class="item-row">
+            <td width="60%"><strong style="color:#0a0a0a;font-size:15px;">Field Jacket — Olive</strong><br/><span style="color:#737373;font-size:13px;">Size M · Qty 1</span></td>
+            <td width="40%" align="right" style="color:#0a0a0a;font-size:15px;font-weight:500;">$248.00</td>
+          </tr>
+          <tr class="item-row">
+            <td><strong style="color:#0a0a0a;font-size:15px;">Cotton Tee — Bone</strong><br/><span style="color:#737373;font-size:13px;">Size M · Qty 2</span></td>
+            <td align="right" style="color:#0a0a0a;font-size:15px;font-weight:500;">$78.00</td>
+          </tr>
+          <tr class="item-row">
+            <td><strong style="color:#0a0a0a;font-size:15px;">Wool Beanie — Charcoal</strong><br/><span style="color:#737373;font-size:13px;">One size · Qty 1</span></td>
+            <td align="right" style="color:#0a0a0a;font-size:15px;font-weight:500;">$42.00</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- Totals -->
+    <mj-section padding="24px 40px 0 40px">
+      <mj-column>
+        <mj-table cellpadding="0" cellspacing="0" css-class="totals">
+          <tr><td width="60%" style="color:#525252;">Subtotal</td><td align="right" style="color:#0a0a0a;">$368.00</td></tr>
+          <tr><td style="color:#525252;">Shipping (Standard, 3-5 days)</td><td align="right" style="color:#0a0a0a;">$0.00</td></tr>
+          <tr><td style="color:#525252;">Tax</td><td align="right" style="color:#0a0a0a;">$32.80</td></tr>
+          <tr class="grand"><td>Total</td><td align="right">$400.80</td></tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- Shipping + Payment -->
+    <mj-section padding="36px 40px 24px 40px">
+      <mj-column width="50%">
+        <mj-text css-class="label" padding="0 0 6px 0">Shipping to</mj-text>
+        <mj-text padding="0" color="#0a0a0a" font-size="14px" line-height="1.5">Sam Reilly<br/>548 Market St #28475<br/>San Francisco, CA 94104<br/>United States</mj-text>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text css-class="label" padding="0 0 6px 0">Payment</mj-text>
+        <mj-text padding="0" color="#0a0a0a" font-size="14px" line-height="1.5">Visa ending in 4242<br/>Charged $400.80</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section padding="0 40px">
+      <mj-column>
+        <mj-divider border-color="#f0f0f0" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Help -->
+    <mj-section padding="24px 40px">
+      <mj-column>
+        <mj-text font-size="14px" color="#525252">Questions about your order? <a href="#">Contact support</a> or reply to this email.</mj-text>
+        <mj-text font-size="14px" color="#525252">Free returns within 30 days. <a href="#">Start a return</a>.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section padding="24px 40px 40px 40px">
+      <mj-column>
+        <mj-text color="#a3a3a3" font-size="12px" line-height="1.6" padding="0">
+          Northbound Goods · 548 Market St · San Francisco, CA 94104<br/>
+          <a href="#" style="color:#a3a3a3;text-decoration:underline;">Order history</a>  ·  <a href="#" style="color:#a3a3a3;text-decoration:underline;">Return policy</a>  ·  <a href="#" style="color:#a3a3a3;text-decoration:underline;">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

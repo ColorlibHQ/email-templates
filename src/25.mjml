@@ -1,0 +1,123 @@
+<mjml>
+  <mj-head>
+    <mj-title>Loop 4.2 — Shipped</mj-title>
+    <mj-preview>Shared canvases, sub-issues, a faster editor. Plus what's coming next month.</mj-preview>
+
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+    <mj-font name="JetBrains Mono" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;display=swap" />
+
+    <mj-include path="./partials/base.mjml" />
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" />
+      <mj-text color="#404040" font-size="15px" line-height="1.65" />
+      <mj-button background-color="#7c3aed" color="#ffffff" border-radius="6px" inner-padding="12px 26px" font-weight="600" font-size="14px" />
+      <mj-class name="h1" color="#0a0a0a" font-size="36px" line-height="1.1" font-weight="700" letter-spacing="-0.025em" padding="0 0 14px 0" />
+      <mj-class name="h2" color="#0a0a0a" font-size="22px" line-height="1.2" font-weight="700" letter-spacing="-0.015em" padding="0 0 8px 0" />
+      <mj-class name="kicker" font-size="12px" text-transform="uppercase" letter-spacing="0.12em" color="#7c3aed" font-weight="600" padding="0 0 14px 0" />
+    </mj-attributes>
+
+    <mj-style>
+      a { color: #7c3aed; text-decoration: none; font-weight: 500; }
+      .version-tag { font-family:'JetBrains Mono', ui-monospace, Menlo, monospace; font-size:12px; background:#f4f3ff; color:#7c3aed; padding:4px 10px; border-radius:4px; letter-spacing:0.02em; }
+      .feat-icon { display:inline-block; width:32px; height:32px; line-height:32px; text-align:center; border-radius:8px; font-size:16px; font-weight:700; color:#fff; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#fafafa" width="640px">
+
+    <!-- Header bar with brand + version -->
+    <mj-section background-color="#ffffff" padding="28px 40px" border-bottom="1px solid #ececec">
+      <mj-column width="50%" vertical-align="middle">
+        <mj-text font-weight="700" font-size="17px" letter-spacing="-0.02em" color="#0a0a0a" padding="0">
+          <a href="#" style="color:#0a0a0a;">Loop</a>
+        </mj-text>
+      </mj-column>
+      <mj-column width="50%" vertical-align="middle">
+        <mj-text align="right" padding="0"><span class="version-tag">v4.2.0 · mar 14</span></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero headline -->
+    <mj-section background-color="#ffffff" padding="56px 40px 24px 40px">
+      <mj-column>
+        <mj-text mj-class="kicker">What shipped this week</mj-text>
+        <mj-text mj-class="h1">Shared canvases.<br/>Sub-issues. A faster editor.</mj-text>
+        <mj-text color="#525252" font-size="17px" line-height="1.6">Three of the most-requested features of the year, plus a quiet rewrite that makes the editor 40% faster on long docs. Here's what's new.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero image -->
+    <mj-section background-color="#ffffff" padding="20px 40px 40px 40px">
+      <mj-column>
+        <mj-image src="images/hero.jpg" alt="Loop 4.2 — Shared canvases" border-radius="8px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Feature cards -->
+    <mj-section background-color="#ffffff" padding="0 24px 16px 24px">
+      <mj-column width="33.33%" background-color="#f4f3ff" padding="24px 18px" border-radius="10px">
+        <mj-text padding="0 0 14px 0"><span class="feat-icon" style="background:#7c3aed;">▤</span></mj-text>
+        <mj-text mj-class="h2" font-size="17px" padding="0 0 6px 0">Shared canvases</mj-text>
+        <mj-text font-size="14px" color="#525252">Whiteboard-style canvases that anyone on your team can edit at the same time. With shapes, sticky notes, and live cursors.</mj-text>
+      </mj-column>
+      <mj-column width="33.33%" background-color="#fef3c7" padding="24px 18px" border-radius="10px">
+        <mj-text padding="0 0 14px 0"><span class="feat-icon" style="background:#d97706;">⌥</span></mj-text>
+        <mj-text mj-class="h2" font-size="17px" padding="0 0 6px 0">Sub-issues</mj-text>
+        <mj-text font-size="14px" color="#525252">Break a big issue into smaller ones. Roll up status, completion, and assignees automatically. Up to 10 levels deep.</mj-text>
+      </mj-column>
+      <mj-column width="33.33%" background-color="#dcfce7" padding="24px 18px" border-radius="10px">
+        <mj-text padding="0 0 14px 0"><span class="feat-icon" style="background:#16a34a;">⚡</span></mj-text>
+        <mj-text mj-class="h2" font-size="17px" padding="0 0 6px 0">40% faster editor</mj-text>
+        <mj-text font-size="14px" color="#525252">A new incremental renderer means typing latency is gone, even on docs with 10,000+ blocks. No setting to flip — it just works.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section background-color="#ffffff" padding="32px 40px 16px 40px">
+      <mj-column>
+        <mj-button href="#" align="left">See the full changelog</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="32px 40px 0 40px">
+      <mj-column>
+        <mj-divider border-color="#ececec" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Also fixed (compact list) -->
+    <mj-section background-color="#ffffff" padding="28px 40px 16px 40px">
+      <mj-column>
+        <mj-text mj-class="kicker" padding="0 0 16px 0">Also in 4.2</mj-text>
+        <mj-text font-size="14px" color="#404040" padding="6px 0">• Markdown paste preserves formatting from Notion, Linear, and GitHub</mj-text>
+        <mj-text font-size="14px" color="#404040" padding="6px 0">• New ⌘K command palette with search across canvases and issues</mj-text>
+        <mj-text font-size="14px" color="#404040" padding="6px 0">• Improved keyboard navigation in the sidebar (j/k to move, x to archive)</mj-text>
+        <mj-text font-size="14px" color="#404040" padding="6px 0">• Custom statuses now support emoji prefixes</mj-text>
+        <mj-text font-size="14px" color="#404040" padding="6px 0">• Fix: search no longer hangs on workspaces with 100k+ items</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What's next -->
+    <mj-section background-color="#0a0a0a" padding="36px 40px">
+      <mj-column>
+        <mj-text mj-class="kicker" color="#a78bfa" padding="0 0 14px 0">Coming next month</mj-text>
+        <mj-text color="#ffffff" font-size="22px" font-weight="700" letter-spacing="-0.015em" padding="0 0 10px 0">AI summarize, async standups, and a public API.</mj-text>
+        <mj-text color="#a3a3a3" font-size="14px" padding="0 0 18px 0">Want early access? Reply to this email and we'll add you to the beta cohort.</mj-text>
+        <mj-text font-size="14px" padding="0"><a href="#" style="color:#a78bfa;">See the roadmap →</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#fafafa" padding="32px 40px 40px 40px">
+      <mj-column>
+        <mj-text color="#a3a3a3" font-size="12px" line-height="1.6" padding="0">
+          Loop, Inc. · 548 Market St #28475 · San Francisco, CA 94104<br/>
+          <a href="#" style="color:#a3a3a3;text-decoration:underline;">Unsubscribe from product updates</a>  ·  <a href="#" style="color:#a3a3a3;text-decoration:underline;">Email preferences</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
